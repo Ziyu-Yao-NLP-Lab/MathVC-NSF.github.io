@@ -91,14 +91,14 @@
           <h1 class="title is-1 publication-title">Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://saurabhsriv.com/">Saurabh Srivastava</a><sup>1</sup>,</span>
+              <a href="https://saurabhsriv.com/">Saurabh Srivastava</a><sup>1*</sup>,</span>
             <span class="author-block">
               Chnegyue Huang,</span>
             <span class="author-block">
               Weiguo Fan,
             </span>
             <span class="author-block">
-              <a href="http://ziyuyao.org">Ziyu Yao</a><sup>1</sup>,
+              <a href="http://ziyuyao.org">Ziyu Yao</a><sup>1*</sup>,
             </span>
           </div>
 
@@ -106,7 +106,7 @@
             <span class="author-block"><sup>1</sup>George Mason University</span>
           </div>
           <div class="is-size-8 publication-authors">
-            <span class="author-block"><sup>1</sup>Corresponding Authors</span>
+            <span class="author-block"><sup>*</sup><i>Corresponding Authors</i></span>
           </div>
 
           <div class="column has-text-centered">
@@ -122,15 +122,24 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.02107"
+                <a href="https://huggingface.co/spaces/salokr/PRomPTed"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>&#129303; Demo</span>
                 </a>
               </span>
               <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.02107"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/salokr/PRoPMTed"
@@ -152,7 +161,25 @@
 </section>
 
 
-
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <span style = "font-weight:bold">
+PRomPTed is a novel approach to boost the zero-shot LLM performance by performing prompt rewriting. PRomPTed is task-agnostic and can work across many tasks such as Code Generation, Safe Content Generation, Mathematical and Logical Reasoning tasks, etc. In our paper we show at least 6% improvement in performance across 13 datasets and 10 task types using GPT-4! For more information, please read our paper and check out our GitHub repo . We also hosted a demo version of our approach on huggigface space at . The approach works by
+<ul> Taking a prompt as candidate input prompt </ul>
+<ul> Execute the prompt against a target LLM (or Task LLM)</ul>
+<ul> A MetaLLM verifies if the output generated in the previous step is correct and safe.</ul>
+<ul> If the output is incorrect unsafe, MetaLLM revises the prompt adding hints, solution guidance and safe generation policies.</ul>
+</span>
+</div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
 
 <!-- <section class="hero is-light is-small">
   <div class="hero-body">
