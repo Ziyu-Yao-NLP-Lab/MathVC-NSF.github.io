@@ -166,7 +166,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+<!--         <h2 class="title is-3">Abstract</h2> -->
         <div class="content has-text-justified">
           <span style = "font-weight:bold">
 PRomPTed is a novel approach to boost the zero-shot LLM performance by performing prompt rewriting. PRomPTed is task-agnostic and can work across many tasks such as Code Generation, Safe Content Generation, Mathematical and Logical Reasoning tasks, etc. In our paper we show at least 6% improvement in performance across 13 datasets and 10 task types using GPT-4! For more information, please read our paper and check out our GitHub repo . We also hosted a demo version of our approach on huggigface space at . The approach works by
@@ -175,7 +175,7 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
 <li> Execute the prompt against a target LLM (or Task LLM)</li>
 <li> A MetaLLM verifies if the output generated in the previous step is correct and safe.</li>
 <li> If the output is incorrect or unsafe, MetaLLM revises the prompt adding hints, solution guidance, and safe generation policies.</li>
-  <\ul>
+</ul>
 </span>
 </div>
       </div>
@@ -239,8 +239,94 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
     </div>
   </div>
 </section> -->
+<!-- <start the video section> -->
+<div class="column is-centered has-text-centered is-10 is-offset-1" id="teaserVideos">
+    <div class="columns is-centered is-variable is-0">
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(a) Find one-way flights from New York to Toronto.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/united_0.mp4" type="video/mp4">
+        </video>
 
+      </div>
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(b) Book a roundtrip on July 1 from Mumbai to London and vice versa on July 5 for two adults and a
+            12-year-old in premium
+            economy and if a flight is not available, search through the calendar for available flights.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/united_1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(c) Search receipt with the eTicket 12345678 for the trip reserved by Jason Two</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/united_2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="columns is-centered is-variable is-0">
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(d) Find a flight from Chicago to London on 20 April and return on 23 April.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/aa_0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(e) Search for the interactions between ibuprofen and aspirin.
+          </p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/webmd_0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(f) As a Verizon user, finance a blue iPhone 13 with 256gb along with monthly apple care.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/bestbuy_0.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="columns is-centered is-variable is-0">
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(g) Find Elon Musk's profile and start following, start notifications and like the latest tweet.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/twitter_0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(h) Browse comedy films streaming on Netflix that was released from 1992 to 2007.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/tvguide_0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
+        <div class="overlay">
+          <p>(i) Open page to schedule an appointment for car knowledge test.</p>
+        </div>
+        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
+          <source src="./static/videos/dmv_0.mp4" type="video/mp4">
+        </video>
 
+      </div>
+    </div>
+</div>
+
+<!-- <end the video section> -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -249,14 +335,14 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method to optimize prompts to improve the zero-shot performance of Large Language Models using Prompt Rewriting. 
-            Our approach shows impressive performance over multiple datasets and task types including Code Generation, Mathematical Reasoning, etc.   
+            Large language models (LLMs) have revolutionized zero-shot task performance, mitigating the need for task-specific annotations while 
+            enhancing task generalizability. 
+            Despite its advancements, current methods using trigger phrases such as "Let's think step by step" remain limited. 
+            This study introduces <b>PRomPTed</b>, an approach that optimizes the zero-shot prompts for individual task instances following an 
+            innovative manner of "LLMs in the loop".
           </p>
           <p>
-            <b>Abstract:</b> Large language models (LLMs) have revolutionized zero-shot task performance, mitigating the need for task-specific annotations while enhancing task generalizability. Despite its advancements, current methods using trigger phrases such as "Let's think step by step" remain limited. This study introduces PRomPTed, an approach that optimizes the zero-shot prompts for individual task instances following an innovative manner of "LLMs in the loop".
-          </p>
-          <p>
-            Our comprehensive evaluation across 13 datasets and 10 task types based on GPT-4 reveals that PRomPTed 
+            Our comprehensive evaluation across 13 datasets and 10 task types based on GPT-4 reveals that <b>PRomPTed</b> 
             significantly outperforms both the naive zero-shot approaches and a strong baseline (i.e., ``Output Refinement'') which 
             refines the task output instead of the input prompt. Our experimental results also confirmed the generalization of 
             this advantage to the relatively weaker GPT-3.5. Even more intriguingly, we found that leveraging GPT-3.5 to 
