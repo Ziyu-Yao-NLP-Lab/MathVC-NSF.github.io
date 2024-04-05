@@ -355,115 +355,289 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
 
 
 <!--/ table starts here -->
-<section class="section">
-  <div class="column is-centered has-text-centered is-10 is-offset-1">
-    <div class="content has-text-justified">
-      <div class="column is-full-width interpolation-panel">
-        <div class="columns" style="flex-wrap: wrap;">
-          <!-- First table column -->
-          <div class="column" style="width: 50%;">
-            <div style="width: 70%; margin: 0 auto;">
-              <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0)">
-                <thead>
+  <div style="width: 70%; margin: 0 auto;">
+  <div class="column is-full-width interpolation-panel">
+    <div class="columns">
+      <div class="column is-one-third">
+        <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0)">  
+          <thead>
+            <tr>
+              <th style="border: 0">&nbsp;</th>
+              <th style="vertical-align: middle" rowspan="2">Mind2Web</th>
+            </tr>
+            <tr>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+            <td style="font-weight: bold"># Domains</td>
+            <td style="text-align: center;">5 / 31</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold"># Environments<br>&nbsp;</td>
+            <td style="text-align: center;">137 websites</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">Environment <br>Type</td>
+            <td style="text-align: center;">Real world websites</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">Avg. # Elements</td>
+            <td style="text-align: center;">1,135</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold"># Tasks<br>&nbsp;</td>
+            <td style="text-align: center;">2,350</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">Task Type</td>
+            <td style="text-align: center;">
+              Daily task<br>
+              High level goal<br>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">Avg. # Actions</td>
+            <td style="text-align: center;">
+              7.3
+            </td>
+          </tr>
+        </tbody></table>
+  
+      </div>
+      <div class="column is-two-thirds">
+        <div class="table-container">
+          <div class="columns">
+            <div class="column">
+              <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0); width:600px; text-align: center;">
+                <thead style="text-align: center;">
                   <tr>
-                    <th style="border: 0">&nbsp;</th>
-                    <th style="vertical-align: middle" rowspan="2">Mind2Web</th>
+                    <th colspan="3">Web Task</th>
                   </tr>
                   <tr>
-                    <th>&nbsp;</th>
+                    <th style="width: 33%"><a href="https://miniwob.farama.org/" target="_blank">MiniWoB++</a>
+                    </th>
+                    <th style="width: 33%"><a href="https://webshop-pnlp.github.io/" target="_blank">WebShop</a>
+                    </th>
+                    <th style="width: 33%"><a href="https://paperswithcode.com/dataset/russ-dataset" target="_blank">RUSS</a></th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td style="font-weight: bold"># Domains</td>
-                    <td style="text-align: center;">5 / 31</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold"># Environments<br>&nbsp;</td>
-                    <td style="text-align: center;">137 websites</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold">Environment <br>Type</td>
-                    <td style="text-align: center;">Real world websites</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold">Avg. # Elements</td>
-                    <td style="text-align: center;">1,135</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold"># Tasks<br>&nbsp;</td>
-                    <td style="text-align: center;">2,350</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold">Task Type</td>
-                    <td style="text-align: center;">
-                      Daily task<br>
-                      High level goal<br>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold">Avg. # Actions</td>
-                    <td style="text-align: center;">7.3</td>
-                  </tr>
-                </tbody>
-              </table>
+                <tbody><tr>
+                  <td>-</td>
+                  <td>1</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>100 websites/webpages</td>
+                  <td>1 website<br>8 webpages</td>
+                  <td>22 websites</td>
+                </tr>
+                <tr>
+                  <td>Simplified ATARI-like website</td>
+                  <td>Simplified shopping website</td>
+                  <td>Real world websites</td>
+                </tr>
+                <tr>
+                  <td>27.5</td>
+                  <td>38.0</td>
+                  <td>801.4</td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>12,000 instantiation with different products</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>
+                    Game like task<br>
+                    Low level instruction
+                  </td>
+                  <td>
+                    Product searching<br>
+                    High level goal
+                  </td>
+                  <td>
+                    Help task<br>
+                    High + Low level
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3.6
+                  </td>
+                  <td>
+                    11.3
+                  </td>
+                  <td>
+                    5.4
+                  </td>
+                </tr>
+              </tbody></table>
             </div>
-          </div>
-          <!-- Second table column -->
-          <div class="column" style="width: 50%;">
-            <div style="width: 70%; margin: 0 auto;">
-              <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0)">
-                <thead>
+            <div class="column">
+              <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">
+                <thead style="text-align: center;">
                   <tr>
-                    <th style="border: 0">&nbsp;</th>
-                    <th style="vertical-align: middle" rowspan="2">MiniWoB++</th>
+                    <th colspan="2">Web Extraction &amp; QA</th>
                   </tr>
                   <tr>
-                    <th>&nbsp;</th>
+                    <th style="width: 50%"><a href="https://academictorrents.com/details/411576c7e80787e4b40452360f5f24acba9b5159" target="_blank">SWDE</a></th>
+                    <th style="width: 50%"><a href="https://x-lance.github.io/WebSRC/" target="_blank">WebSRC</a>
+                    </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody><tr>
+                  <td>8</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>80<br>websites/webpages</td>
+                  <td>70 websites</td>
+                </tr>
+                <tr>
+                  <td>Real world websites</td>
+                  <td>Snippets of real world websites</td>
+                </tr>
+                <tr>
+                  <td>898.0</td>
+                  <td>119.3</td>
+                </tr>
+                <tr>
+                  <td>32<br>attributes</td>
+                  <td>460<br>unique questions</td>
+                </tr>
+                <tr>
+                  <td>Information extraction<br>
+                    High level goal</td>
+                  <td>
+                    -<br>
+                    High level goal
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </tbody></table>
+            </div>
+            <div class="column">
+              <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0); width:600px; text-align: center;">
+                <thead style="text-align: center;">
                   <tr>
-                    <td style="font-weight: bold"># Domains</td>
-                    <td style="text-align: center;">10 / 50</td>
+                    <th colspan="3">Mobile App Task</th>
                   </tr>
                   <tr>
-                    <td style="font-weight: bold"># Environments</td>
-                    <td style="text-align: center;">250 apps</td>
+                    <th style="width: 33%"><a href="https://paperswithcode.com/dataset/pixelhelp" target="_blank">PixelHelp</a></th>
+                    <th style="width: 33%"><a href="https://x-lance.github.io/META-GUI-Leaderboard/" target="_blank">META-GUI</a></th>
+                    <th style="width: 33%"><a href="https://github.com/aburns4/MoTIF" target="_blank">MoTIF</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody><tr>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>4 Apps<br>&nbsp;</td>
+                  <td>11 Apps</td>
+                  <td>125 Apps</td>
+                </tr>
+                <tr>
+                  <td>Mobile Apps<br>&nbsp;</td>
+                  <td>Mobile Apps</td>
+                  <td>Mobile Apps</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>79.4</td>
+                  <td>188.4</td>
+                </tr>
+                <tr>
+                  <td>187</td>
+                  <td>
+                    1,125 dialogues<br>
+                    4,648 turns
+                  </td>
+                  <td>
+                    4,707 demonstrations<br>
+                    756 unique tasks
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Help task<br>
+                    High + Low level
+                  </td>
+                  <td>
+                    Daily task<br>
+                    High level goal
+                  </td>
+                  <td>
+                    Daily task<br>
+                    High + Low level
+                  </td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>4.3</td>
+                  <td>4.4</td>
+                </tr>
+              </tbody></table>
+            </div>
+            <div class="column">
+              <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">
+                <thead style="text-align: center;">
+                  <tr>
+                    <th colspan="2">Dialogue</th>
                   </tr>
                   <tr>
-                    <td style="font-weight: bold">Environment <br>Type</td>
-                    <td style="text-align: center;">Simulated tasks</td>
+                    <th style="width: 50%"><a href="https://github.com/google-research-datasets/dstc8-schema-guided-dialogue" target="_blank">SGD</a></th>
+                    <th style="width: 50%"><a href="https://github.com/budzianowski/multiwoz" target="_blank">MultiWOZ</a></th>
                   </tr>
-                  <tr>
-                    <td style="font-weight: bold">Avg. # Elements</td>
-                    <td style="text-align: center;">950</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold"># Tasks</td>
-                    <td style="text-align: center;">5,000</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold">Task Type</td>
-                    <td style="text-align: center;">
-                      Simulation<br>
-                      Specific tasks<br>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: bold">Avg. # Actions</td>
-                    <td style="text-align: center;">10</td>
-                  </tr>
-                </tbody>
-              </table>
+                </thead>
+                <tbody><tr>
+                  <td>20</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>45 services<br>&nbsp;</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>-<br>&nbsp;</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>86 Intents / 314 slots<br>16,142 dialogues</td>
+                  <td>13 Intents / 24 slots<br>8,438 dialogues</td>
+                </tr>
+                <tr>
+                  <td>
+                    Daily task<br>
+                    High level goal
+                  </td>
+                  <td>
+                    Daily task<br>
+                    High level goal
+                  </td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody></table>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-
+</div>
 
 <!--/ table ends here -->
 
