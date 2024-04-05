@@ -170,10 +170,12 @@
         <div class="content has-text-justified">
           <span style = "font-weight:bold">
 PRomPTed is a novel approach to boost the zero-shot LLM performance by performing prompt rewriting. PRomPTed is task-agnostic and can work across many tasks such as Code Generation, Safe Content Generation, Mathematical and Logical Reasoning tasks, etc. In our paper we show at least 6% improvement in performance across 13 datasets and 10 task types using GPT-4! For more information, please read our paper and check out our GitHub repo . We also hosted a demo version of our approach on huggigface space at . The approach works by
-<ul> Taking a prompt as candidate input prompt </ul>
-<ul> Execute the prompt against a target LLM (or Task LLM)</ul>
-<ul> A MetaLLM verifies if the output generated in the previous step is correct and safe.</ul>
-<ul> If the output is incorrect unsafe, MetaLLM revises the prompt adding hints, solution guidance and safe generation policies.</ul>
+<ul>
+            <li> Taking a prompt as candidate input prompt </li>
+<li> Execute the prompt against a target LLM (or Task LLM)</li>
+<li> A MetaLLM verifies if the output generated in the previous step is correct and safe.</li>
+<li> If the output is incorrect or unsafe, MetaLLM revises the prompt adding hints, solution guidance, and safe generation policies.</li>
+  <\ul>
 </span>
 </div>
       </div>
