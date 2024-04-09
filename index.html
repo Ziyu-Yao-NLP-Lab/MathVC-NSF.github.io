@@ -558,11 +558,11 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
 
     <!-- Average Performance -->
     <div class="column">
-      <h2 class="title is-3">Matting</h2>
+      <h2 class="title is-3">Average Performance</h2>
       <div class="columns is-centered">
         <div class="column content">
           <p>
-            On an average, PRomPTed outperforms the baselines when using the both stronger
+            On average, PRomPTed outperforms the baselines when using both stronger
             and weaker backbones like GPT-4 and GPT-3.5.
           </p>
           <img src="./static/images/average.png" alt="A descriptive text about the image">
@@ -574,6 +574,94 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
   <!--/ Matting. -->
 </div>
 </section>
+
+
+
+<section class="section">
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">PRomPTed With Open-Source LLMs</h2>
+
+      <!-- Interpolating. -->
+      <h3 class="title is-4">Experiments with Mixtral and Mistral</h3>
+      <div class="content has-text-justified">
+        <p>
+          We also compare PRomPTed with open-source LLMs like Mixtral-7X8B and Mistral-7B. For comparison, we used 4
+          datasets including ToxicChats, StrategyQA, MATH, and MMLU (PM). Please refer to our paper for more details.
+        </p>
+      </div>
+      <br>
+      <!-- TABLE CODE HERE -->
+      <div class="table-container">
+        <table class="table is-striped is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Toxic Chats</th>
+              <th>StrategyQA</th>
+              <th>MATH</th>
+              <th>MMLU (PM)</th>
+              <th>Avg.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Zero-Shot Mixtral</td>
+              <td>24.000</td>
+              <td>57.200</td>
+              <td>38.571</td>
+              <td>79.600</td>
+              <td>49.843</td>
+            </tr>
+            <tr>
+              <td>Zero-Shot GPT-3.5</td>
+              <td>18.000</td>
+              <td>67.600</td>
+              <td>48.571</td>
+              <td>72.667</td>
+              <td>51.710</td>
+            </tr>
+            <tr>
+              <td>MetalLLM = TaskLLM = Mixtral</td>
+              <td>92.000</td>
+              <td>62.800</td>
+              <td>40.286</td>
+              <td>80.800</td>
+              <td>68.972</td>
+            </tr>
+            <tr>
+              <td>MetalLLM = Mistral; TaskLLM = Mixtral</td>
+              <td>78.000</td>
+              <td>58.800</td>
+              <td>39.714</td>
+              <td>80.000</td>
+              <td>64.129</td>
+            </tr>
+            <tr>
+              <td>MetalLLM=Mixtral; TaskLLM = GPT3.5</td>
+              <td>88.000</td>
+              <td>68.000</td>
+              <td>48.000</td>
+              <td>78.400</td>
+              <td>70.600</td>
+            </tr>
+            <tr>
+              <td>MetalLLM=Mistral; TaskLLM = GPT3.5</td>
+              <td>86.000</td>
+              <td>61.200</td>
+              <td>48.285</td>
+              <td>77.600</td>
+              <td>68.271</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
   
 <section class="section" id="BibTeX">
