@@ -27,6 +27,7 @@
 
 
 
+
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -618,7 +619,12 @@
                     facilitating a smooth multi-stage student discussion, and character simulation for creating and
                     updating individual student characters.
                     <br>
-                    A key innovation of MathVC lies in the use of symbolic schemas describing how characters form and gradually update their understanding of the mathematics problem. Specifically, we design the <b>Task Schema</b> to describe elements that are necessary for solving a given MM task and the <b>Character Schema</b>to show a student character's understanding and modeling plan. An example is shown below. The LLM edits the correct value 16 into 15 in the task schema to simulate the initial mistake made by the simulated student Charlie.
+                    A key innovation of MathVC lies in the use of symbolic schemas describing how characters form and
+                    gradually update their understanding of the mathematics problem. Specifically, we design the <b>Task
+                    Schema</b> to describe elements that are necessary for solving a given MM task and the <b>Character
+                    Schema</b>to show a student character's understanding and modeling plan. An example is shown below.
+                    The LLM edits the correct value 16 into 15 in the task schema to simulate the initial mistake made
+                    by the simulated student Charlie.
                 </p>
                 <img src="./static/images/schema.png" alt="A descriptive text about the image">
 
@@ -626,7 +632,7 @@
 
 
             <!-- Interpolating. -->
-            <h3 class="title is-4">Human Evaluation</h3>
+            <!--            <h3 class="title is-4">Human Evaluation</h3>-->
             <div class="content has-text-justified">
                 <p>
                     We compare MathVC with four baselines.
@@ -642,7 +648,8 @@
                     </ul>
                 </li>
                 <br>
-                The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment and conversational procedural alignment it reflected (1: worst; 4: best).
+                The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment
+                and conversational procedural alignment it reflected (1: worst; 4: best).
 
                 </p>
             </div>
@@ -709,15 +716,88 @@
 
 <section class="section">
     <div class="container is-max-desktop">
-        <h3 class="title is-3">Examples</h3>
+        <h2 class="title is-3">Experiment</h2>
+
+
+        <h3 class="title is-4">Human Evaluation</h3>
         <div class="content has-text-justified">
             <p>
-                 In the vanilla simulation, the discussion bypasses many discussion stages (e.g., establishing the team organization), and Alice, who is bad at mathematics, does not make any mistakes. The domain-specified simulation made some improvements, such as simulating responses that are shorter and can simulate how students establish shared task understanding before planning on problem-solving, although it is still unable to simulate a fully extended, multi-stage conversation (e.g., team organization is still missing). In MATHVC, the conversation successfully goes over all stages. It also simulates how Alice makes a calculation mistake initially, which is then corrected by Charlie. Like a real student, Alice then adjusts her modeling plan based on Charlie’s explanation.
+                We compare MathVC with four baselines.
+            <li>Vanilla Simulation: We directly present the LLM the math question, the student characteristics, and
+                the dialogue history, and then instruct the LLM to generate responses as a middleschool student.
+            </li>
+            <li>Domain-Specified Simulation: We augment the vanilla simulation with domain-specific knowledge.
+                <ul>
+                    <li>w/ only character schema: We augment domain-specific simulation with the character schema.
+                    </li>
+                    <li>w/ only the meta planner: We augment domain-specific simulation with the meta planner.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment and
+            conversational procedural alignment it reflected (1: worst; 4: best).
+
             </p>
         </div>
         <br>
-        <img src="./static/images/example.png" alt="A descriptive text about the image">
-    </div>
+        <!-- TABLE CODE HERE -->
+        <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Characteristic Alignment</th>
+                    <th>Conversational Procedural Alignment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Vanilla Simulation</td>
+                    <td>2.85</td>
+                    <td>2.88</td>
+                </tr>
+                <tr>
+                    <td>Domain-Specified Simulation</td>
+                    <td>3.30</td>
+                    <td>3.15</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only character schema</td>
+                    <td>3.50</td>
+                    <td>3.20</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only the meta planner</td>
+                    <td>3.00</td>
+                    <td>3.10</td>
+                </tr>
+                <tr>
+                    <td>MathVC</td>
+                    <td>3.73</td>
+                    <td>3.530</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3 class="title is-4">Case Study</h3>
+
+            <div class="content has-text-justified">
+                <p>
+                    In the vanilla simulation, the discussion bypasses many discussion stages (e.g., establishing the
+                    team organization), and Alice, who is bad at mathematics, does not make any mistakes. The
+                    domain-specified simulation made some improvements, such as simulating responses that are shorter
+                    and can simulate how students establish shared task understanding before planning on
+                    problem-solving, although it is still unable to simulate a fully extended, multi-stage conversation
+                    (e.g., team organization is still missing). In MATHVC, the conversation successfully goes over all
+                    stages. It also simulates how Alice makes a calculation mistake initially, which is then corrected
+                    by Charlie. Like a real student, Alice then adjusts her modeling plan based on Charlie’s
+                    explanation.
+                </p>
+            </div>
+            <br>
+            <img src="./static/images/example.png" alt="A descriptive text about the image">
+        </div>
 </section>
 
 
