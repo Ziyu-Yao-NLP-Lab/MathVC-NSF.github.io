@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Zero-Shot Prompt Optimization with LLMs in the loop.">
-  <meta name="keywords" content="PRomPTed, LLMs, Prompt Optimization">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance</title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education">
+    <meta name="keywords" content="LLM Agent, Education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -20,100 +20,112 @@
     gtag('js', new Date());
 
     gtag('config', 'G-PYVRSFMDRL');
-  </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/gmu.png">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+
+
+
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/gmu.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 <body>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+            <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
-      </a>
+            </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://arxiv.org/pdf/2310.03094.pdf">
-            LLM Cascading
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/pdf/2308.04030.pdf">
-            Gentopia
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/pdf/2310.03249.pdf">
-            LLMs as Planners
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/pdf/2305.13469.pdf">
-            MailEx
-          </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More Research
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://arxiv.org/pdf/2310.03094.pdf">
+                        LLM Cascading
+                    </a>
+                    <a class="navbar-item" href="https://arxiv.org/pdf/2308.04030.pdf">
+                        Gentopia
+                    </a>
+                    <a class="navbar-item" href="https://arxiv.org/pdf/2310.03249.pdf">
+                        LLMs as Planners
+                    </a>
+                    <a class="navbar-item" href="https://arxiv.org/pdf/2305.13469.pdf">
+                        MailEx
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-  </div>
+    </div>
 </nav>
 
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-widescreen">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance</h1>
-          <div class="is-size-5 publication-authors">
+    <div class="hero-body">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">MathVC: An LLM-Simulated Multi-Character Virtual Classroom
+                        for Mathematics Education</h1>
+                    <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://saurabhsriv.com/">Saurabh Srivastava</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              Chnegyue Huang,</span>
-            <span class="author-block">
-              Weiguo Fan,
-            </span>
-            <span class="author-block">
+              <a href="https://murongyue.github.io/">Murong Yue</a><sup>1*</sup>,</span>
+                        <span class="author-block">
+              <a href="https://nlp.cs.gmu.edu/author/wijdane-mifdal/">Wijdane Mifdal</a><sup>1</sup>,</span>
+                        <span class="author-block">
+              <a href="https://zjanice.github.io/">Yixuan Zhang</a><sup>2</sup>,</span>
+                        <span class="author-block">
+              <a href="https://cehd.gmu.edu/people/faculty/jsuh/">Jennifer Suh</a><sup>3</sup>,</span>
+                        <span class="author-block">
               <a href="http://ziyuyao.org">Ziyu Yao</a><sup>1*</sup>,
             </span>
-          </div>
+                    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>George Mason University</span>
-          </div>
-          <div class="is-size-8 publication-authors">
-            <span class="author-block"><sup>*</sup><i>Corresponding Authors</i></span>
-          </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Department of Computer Science, George Mason University</span>
+                        <span class="author-block"><sup>2</sup>Department of Computer Science, College of William&Mary</span>
+                        <span class="author-block"><sup>3</sup>Mathematics Education, School of Education, George Mason University</span>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.02107"
+                    </div>
+                    <div class="is-size-8 publication-authors">
+                        <span class="author-block"><sup>*</sup><i>Corresponding Authors</i></span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                <a href="https://arxiv.org/pdf/2404.06711.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -121,66 +133,74 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/spaces/salokr/PRomPTed"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      
-                  </span>
-                  <span>&#129303; Demo</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.02107"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/salokr/PRoPMTed"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-            </div>
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://huggingface.co/spaces/salokr/PRomPTed"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      -->
+                            <!--                  </span>-->
+                            <!--                  <span>&#129303; Demo</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Video Link. -->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://arxiv.org/abs/2310.02107"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fas fa-file-pdf"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Paper</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Code Link. -->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://github.com/salokr/PRoPMTed"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fab fa-github"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Code</span>-->
+                            <!--                  </a>-->
+                            <!--              </span>-->
+                            <!-- Dataset Link. -->
+                        </div>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-<!--         <h2 class="title is-3">Abstract</h2> -->
-        <div class="content has-text-justified">
-          <span style = "font-weight:bold">
-PRomPTed is a novel approach to boost the zero-shot LLM performance by performing prompt rewriting. PRomPTed is task-agnostic and can work across many tasks such as Code Generation, Safe Content Generation, Mathematical and Logical Reasoning tasks, etc. In our paper we show at least 6% improvement in performance across 13 datasets and 10 task types using GPT-4! For more information, please read our paper and check out our GitHub repo . We also hosted a <a href="https://huggingface.co/spaces/salokr/PRomPTed">demo version</a>a of our approach on huggigface space. The approach works by
-<ul>
-            <li> Taking the initial prompt from the user. </li>
-<li> Execute the prompt against a target LLM (or Task LLM)</li>
-<li> A MetaLLM verifies if the output generated in the previous step is correct and safe.</li>
-<li> If the output is incorrect or unsafe, MetaLLM revises the prompt adding hints, solution guidance, and safe generation policies.</li>
-</ul>
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <!--         <h2 class="title is-3">Abstract</h2> -->
+                <div class="content has-text-justified">
+          <span style="font-weight:bold">
+            MATHVC is presented, the very first LLM-powered virtual classroom containing multiple LLM-simulated student characters, with whom a human student can practice their MM skill and the effectiveness of the simulation approach was confirmed and the promise for MATHVC to benefit real-life students in the future was shown.
+
+
+          <p>
+              <br>
+            An example demonstrating the application of MATHVC, where students are presented a math problem (optionally with accompanied data) and engage in effective discussions on math modeling. Alice, Bob, and Charlie are LLM-simulated student characters. A human student can choose to respond or skip the current turn.
+          </p>
+              <!--PRomPTed is a novel approach to boost the zero-shot LLM performance by performing prompt rewriting. PRomPTed is task-agnostic and can work across many tasks such as Code Generation, Safe Content Generation, Mathematical and Logical Reasoning tasks, etc. In our paper we show at least 6% improvement in performance across 13 datasets and 10 task types using GPT-4! For more information, please read our paper and check out our GitHub repo . We also hosted a <a href="https://huggingface.co/spaces/salokr/PRomPTed">demo version</a>a of our approach on huggigface space. The approach works by-->
+              <!--<ul>-->
+              <!--            <li> Taking the initial prompt from the user. </li>-->
+              <!--<li> Execute the prompt against a target LLM (or Task LLM)</li>-->
+              <!--<li> A MetaLLM verifies if the output generated in the previous step is correct and safe.</li>-->
+              <!--<li> If the output is incorrect or unsafe, MetaLLM revises the prompt adding hints, solution guidance, and safe generation policies.</li>-->
+
+              <!--</ul>-->
 </span>
-</div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
 </section>
 
 <!-- <section class="hero is-light is-small">
@@ -239,7 +259,7 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
     </div>
   </div>
 </section> -->
-  
+
 <!-- <start the video section> -->
 <!-- <div class="column is-centered has-text-centered is-10 is-offset-1" id="teaserVideos">
     <div class="columns is-centered is-variable is-0">
@@ -302,510 +322,531 @@ PRomPTed is a novel approach to boost the zero-shot LLM performance by performin
  -->
 <!-- <end the video section> -->
 <div class="container is-max-desktop">
-<img src="./static/images/PROMPTED.png" alt="A descriptive text about the image">
+    <img src="./static/images/overview.png" alt="A descriptive text about the image">
 </div>
 
 
-  
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Large language models (LLMs) have revolutionized zero-shot task performance, mitigating the need for task-specific annotations while 
-            enhancing task generalizability. 
-            Despite its advancements, current methods using trigger phrases such as "Let's think step by step" remain limited. 
-            This study introduces <b>PRomPTed</b>, an approach that optimizes the zero-shot prompts for individual task instances following an 
-            innovative manner of "LLMs in the loop".
-          </p>
-          <p>
-            Our comprehensive evaluation across 13 datasets and 10 task types based on GPT-4 reveals that <b>PRomPTed</b> 
-            significantly outperforms both the naive zero-shot approaches and a strong baseline (i.e., ``Output Refinement'') which 
-            refines the task output instead of the input prompt. Our experimental results also confirmed the generalization of 
-            this advantage to the relatively weaker GPT-3.5. Even more intriguingly, we found that leveraging GPT-3.5 to 
-            rewrite prompts for the stronger GPT-4 not only matches but occasionally exceeds the efficacy of using GPT-4 as the prompt rewriter. 
-            Our research thus presents a huge value in not only enhancing zero-shot LLM performance but also potentially 
-            enabling supervising LLMs with their weaker counterparts, a capability attracting much interest recently.
-          </p>
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Mathematical modeling (MM) is considered a fundamental skill for students in STEM disciplines.
+                        Practicing the MM skill is often the most effective when students can engage in group discussion
+                        and collaborative problem-solving. However, due to unevenly distributed teachers and educational
+                        resources needed to monitor such group activities, students do not always receive equal
+                        opportunities for this practice. Excitingly, large language models (LLMs) have recently
+                        demonstrated strong capability in both modeling mathematical problems and simulating characters
+                        with different traits and properties. Drawing inspiration from the advancement of LLMs, in this
+                        work, we present MATHVC, the very first LLM-powered virtual classroom containing multiple
+                        LLM-simulated student characters, with whom a human student can practice their MM skill. To
+                        encourage each LLM character’s behaviors to be aligned with their specified math-relevant
+                        properties (termed “characteristics alignment”) and the overall conversational procedure to be
+                        close to an authentic student MM discussion (termed “conversational procedural alignment”), we
+                        proposed three innovations: integrating MM domain knowledge into the simulation, defining
+                        symbolic schema as the ground for character simulation, and designing a meta planner at the
+                        platform level to drive the conversational procedure. Through experiments and ablation studies,
+                        we confirmed the effectiveness of our simulation approach and showed the promise for MATHVC to
+                        benefit real-life students in the future.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+        <!--/ Abstract. -->
     </div>
-    <!--/ Abstract. -->
-  </div>
 </section>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-<!--         <h2 class="title is-3">Abstract</h2> -->
-        <div class="content has-text-justified">
-        <md-block rendered="content"><p><em>Updates</em></p>
-        <ul>
-<li>2024-04-05: <a href="https://huggingface.co/spaces/salokr/PRomPTed">&#129303; demo</a> is online. Get your api-keys ready and check it out.</li>
-<li>2024-02-16: <a href="https://arxiv.org/abs/2310.02107">ArXiv</a> version is online. Please check out our preprint.</li>
-</ul>
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <!--         <h2 class="title is-3">Abstract</h2> -->
+                <div class="content has-text-justified">
+                    <md-block rendered="content"><p><em>Updates</em></p>
+                        <ul>
+                            <!--<li>2024-04-05: <a href="https://huggingface.co/spaces/salokr/PRomPTed">&#129303; demo</a> is online. Get your api-keys ready and check it out.</li>-->
+                            <li>The demo and code are coming soon!</li>
+                            <li>2024-04: <a href="https://arxiv.org/pdf/2404.06711.pdf">ArXiv</a> version is online.
+                                Please check out our preprint.
+                            </li>
+                        </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        <!--/ Abstract. -->
     </div>
-    <!--/ Abstract. -->
-  </div>
 </section>
-
-
 
 
 <!--/ table starts here -->
 
-<div style="width: 70%; margin: 0 auto;">
-  <div class="column is-full-width interpolation-panel">
-    <div class="columns">
-      <div class="column is-one-third">
-        <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0)">
-          <thead>
-            <tr>
-              <th style="border: 0">Datasets&#8594;</th>
-            </tr>
-            <tr>
-              <th>Approaches&#8595;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="font-weight: bold">Zero-Shot</td>
-            </tr>
-            <tr>
-              <td style="font-weight: bold">Zero-Shot-CoT</td>
-            </tr>
-            <tr>
-              <td style="font-weight: bold">Output Refinement</td>
-            </tr>
-            <tr>
-              <td style="font-weight: bold">PRomPTed</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="column is-two-thirds">
-        <div class="table-container">
-          <div class="columns">
-            <div class="column">
-              <table class="table is-hoverable is-striped"
-                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">
-                <thead style="text-align: center;">
-                  <tr>
-                    <th colspan="2">Mathematical Reasoning</th>
-                  </tr>
-                  <tr>
-                    <th style="width: 50%"><a href="https://miniwob.farama.org/" target="_blank">GSM8K</a>
-                    </th>
-                    <th style="width: 50%"><a href="https://webshop-pnlp.github.io/" target="_blank">MATH</a>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>92.400</td>
-                    <td>48.857</td>
-                  </tr>
-                  <tr>
-                    <td>93.600</td>
-                    <td>56.571</td>
-                  </tr>
-                  <tr>
-                    <td>94.000</td>
-                    <td>57.143</td>
-                  </tr>
-                  <tr>
-                    <td>94.400</td>
-                    <td>61.143</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="column">
-              <table class="table is-hoverable is-striped"
-                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:250px; text-align: center;">
-                <thead style="text-align: center;">
-                  <tr>
-                    <th colspan="1">Code Generation</th>
-                  </tr>
-                  <tr>
-                    <th style="width: 100%"><a
-                        href="https://academictorrents.com/details/411576c7e80787e4b40452360f5f24acba9b5159"
-                        target="_blank">HumanEval</a></th>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>67.000</td>
-                  </tr>
-                  <tr>
-                    <td>73.460</td>
-                  </tr>
-                  <tr>
-                    <td>74.585</td>
-                  </tr>
-                  <tr>
-                    <td>78.659</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="column">
-              <table class="table is-hoverable is-striped"
-                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">
-                <thead style="text-align: center;">
-                  <tr>
-                    <th colspan="2">Logical Reasoning</th>
-                  </tr>
-                  <tr>
-                    <th style="width: 50%"><a href="https://paperswithcode.com/dataset/pixelhelp"
-                        target="_blank">Logical
-                        Deductions</a></th>
-                    <th style="width: 50%"><a href="https://x-lance.github.io/META-GUI-Leaderboard/"
-                        target="_blank">Penguins</a></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>34.500</td>
-                    <td>59.286</td>
-                  </tr>
-                  <tr>
-                    <td>58.900</td>
-                    <td>62.143</td>
-                  </tr>
-                  <tr>
-                    <td>66.500</td>
-                    <td>72.734</td>
-                  </tr>
-                  <tr>
-                    <td>75.600</td>
-                    <td>69.343</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="column">
-              <table class="table is-hoverable is-striped"
-                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">
-                <thead style="text-align: center;">
-                  <tr>
-                    <th colspan="2">Domain Specific IE</th>
-                  </tr>
-                  <tr>
-                    <th style="width: 50%"><a
-                        href="https://github.com/google-research-datasets/dstc8-schema-guided-dialogue"
-                        target="_blank">MedQA</a></th>
-                    <th style="width: 50%"><a href="https://github.com/budzianowski/multiwoz" target="_blank">CyNER</a>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>86.800</td>
-                    <td>38.910</td>
-                  </tr>
-                  <tr>
-                    <td>88.800</td>
-                    <td>39.690</td>
-                  </tr>
-                  <tr>
-                    <td>90.400</td>
-                    <td>63.770</td>
-                  </tr>
-                  <tr>
-                    <td>92.800</td>
-                    <td>73.070</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+<!--<div style="width: 70%; margin: 0 auto;">-->
+<!--  <div class="column is-full-width interpolation-panel">-->
+<!--    <div class="columns">-->
+<!--      <div class="column is-one-third">-->
+<!--        <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0)">-->
+<!--          <thead>-->
+<!--            <tr>-->
+<!--              <th style="border: 0"></th>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <th>Approaches&#8595;</th>-->
+<!--            </tr>-->
+<!--          </thead>-->
+<!--          <tbody>-->
+<!--            <tr>-->
+<!--              <td style="font-weight: bold">Vanilla Simulation</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <td style="font-weight: bold">Domain-Specified Simulation</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <td style="font-weight: bold">Domain-Specified Simulation w/ only character schema</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <td style="font-weight: bold">Domain-Specified Simulation w/ only meta planner</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <td style="font-weight: bold">MathVC</td>-->
+<!--            </tr>-->
+
+<!--          </tbody>-->
+<!--        </table>-->
+<!--      </div>-->
+<!--      <div class="column is-two-thirds">-->
+<!--        <div class="table-container">-->
+<!--          <div class="columns">-->
+<!--            <div class="column">-->
+<!--              <table class="table is-hoverable is-striped"-->
+<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">-->
+<!--                <thead style="text-align: center;">-->
+<!--                  <tr>-->
+<!--                    <th colspan="2">Metric</th>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <th style="width: 50%">GSM8K</a>-->
+<!--                    </th>-->
+<!--                    <th style="width: 50%">MATH</a>-->
+<!--                    </th>-->
+<!--                  </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                  <tr>-->
+<!--                    <td>92.400</td>-->
+<!--                    <td>48.857</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>93.600</td>-->
+<!--                    <td>56.571</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>94.000</td>-->
+<!--                    <td>57.143</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>94.400</td>-->
+<!--                    <td>61.143</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>94.400</td>-->
+<!--                    <td>61.143</td>-->
+<!--                  </tr>-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
+<!--            <div class="column">-->
+<!--              <table class="table is-hoverable is-striped"-->
+<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:250px; text-align: center;">-->
+<!--                <thead style="text-align: center;">-->
+<!--                  <tr>-->
+<!--                    <th colspan="1">Code Generation</th>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <th style="width: 100%"><a-->
+<!--                        href="https://academictorrents.com/details/411576c7e80787e4b40452360f5f24acba9b5159"-->
+<!--                        target="_blank">HumanEval</a></th>-->
+<!--                    </th>-->
+<!--                  </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                  <tr>-->
+<!--                    <td>67.000</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>73.460</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>74.585</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>78.659</td>-->
+<!--                  </tr>-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
+<!--            <div class="column">-->
+<!--              <table class="table is-hoverable is-striped"-->
+<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">-->
+<!--                <thead style="text-align: center;">-->
+<!--                  <tr>-->
+<!--                    <th colspan="2">Logical Reasoning</th>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <th style="width: 50%"><a href="https://paperswithcode.com/dataset/pixelhelp"-->
+<!--                        target="_blank">Logical-->
+<!--                        Deductions</a></th>-->
+<!--                    <th style="width: 50%"><a href="https://x-lance.github.io/META-GUI-Leaderboard/"-->
+<!--                        target="_blank">Penguins</a></th>-->
+<!--                  </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                  <tr>-->
+<!--                    <td>34.500</td>-->
+<!--                    <td>59.286</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>58.900</td>-->
+<!--                    <td>62.143</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>66.500</td>-->
+<!--                    <td>72.734</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>75.600</td>-->
+<!--                    <td>69.343</td>-->
+<!--                  </tr>-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
+<!--            <div class="column">-->
+<!--              <table class="table is-hoverable is-striped"-->
+<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">-->
+<!--                <thead style="text-align: center;">-->
+<!--                  <tr>-->
+<!--                    <th colspan="2">Domain Specific IE</th>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <th style="width: 50%"><a-->
+<!--                        href="https://github.com/google-research-datasets/dstc8-schema-guided-dialogue"-->
+<!--                        target="_blank">MedQA</a></th>-->
+<!--                    <th style="width: 50%"><a href="https://github.com/budzianowski/multiwoz" target="_blank">CyNER</a>-->
+<!--                    </th>-->
+<!--                  </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                  <tr>-->
+<!--                    <td>86.800</td>-->
+<!--                    <td>38.910</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>88.800</td>-->
+<!--                    <td>39.690</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>90.400</td>-->
+<!--                    <td>63.770</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td>92.800</td>-->
+<!--                    <td>73.070</td>-->
+<!--                  </tr>-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
 
 
-<!-- put other table codes here-->
-<!-- put other table codes here-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--/ table ends here -->  
+<!--&lt;!&ndash; put other table codes here&ndash;&gt;-->
+<!--&lt;!&ndash; put other table codes here&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--/ table ends here -->
 
-<section class="section">  
-<div class="container is-max-desktop">
-  <div class="columns is-centered">
-    <!-- Visual Effects. -->
-    <div class="column">
-      <div class="content">
-        <h2 class="title is-3">PRomPTed V. Baselines</h2>
-        <p>
-          We compare PRomPTed with multiple baselines including Zero-Shot, Zero-Shot-CoT
-          and Output Refinement. Unlike Output-Refinement, PRomPTed refines the test instance directly.
-        </p>
-        <img src="./static/images/comparison.png" alt="A descriptive text about the image">
-      </div>
-    </div>
-    <!--/ Visual Effects. -->
+<!--<section class="section">  -->
+<!--<div class="container is-max-desktop">-->
+<!--  <div class="columns is-centered">-->
+<!--    &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--    <div class="column">-->
+<!--      <div class="content">-->
+<!--        <h2 class="title is-3">PRomPTed V. Baselines</h2>-->
+<!--        <p>-->
+<!--          We compare PRomPTed with multiple baselines including Zero-Shot, Zero-Shot-CoT-->
+<!--          and Output Refinement. Unlike Output-Refinement, PRomPTed refines the test instance directly.-->
+<!--        </p>-->
+<!--        <img src="./static/images/comparison.png" alt="A descriptive text about the image">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
 
-    <!-- Average Performance -->
-    <div class="column">
-      <h2 class="title is-3">Average Performance</h2>
-      <div class="columns is-centered">
-        <div class="column content">
-          <p>
-            On average, PRomPTed outperforms the baselines when using both stronger
-            and weaker backbones like GPT-4 and GPT-3.5.
-          </p>
-          <img src="./static/images/average.png" alt="A descriptive text about the image">
-        </div>
+<!--    &lt;!&ndash; Average Performance &ndash;&gt;-->
+<!--    <div class="column">-->
+<!--      <h2 class="title is-3">Average Performance</h2>-->
+<!--      <div class="columns is-centered">-->
+<!--        <div class="column content">-->
+<!--          <p>-->
+<!--            On average, PRomPTed outperforms the baselines when using both stronger-->
+<!--            and weaker backbones like GPT-4 and GPT-3.5.-->
+<!--          </p>-->
+<!--          <img src="./static/images/average.png" alt="A descriptive text about the image">-->
+<!--        </div>-->
 
-      </div>
-    </div>
-  </div>
-  <!--/ Matting. -->
-</div>
-</section>
-
-
-
-<section class="section">
-  <div class="columns is-centered">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">PRomPTed With Different Backbones</h2>
-
-      <!-- Interpolating. -->
-      <h3 class="title is-4">Experiments with Mixtral and Mistral</h3>
-      <div class="content has-text-justified">
-        <p>
-          We also compare PRomPTed with open-source LLMs like Mixtral-7X8B and Mistral-7B. For comparison, we used 4
-          datasets including ToxicChats, StrategyQA, MATH, and MMLU (PM). Please refer to our paper for more details.
-        </p>
-      </div>
-      <br>
-      <!-- TABLE CODE HERE -->
-      <div class="table-container">
-        <table class="table is-striped is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Toxic Chats</th>
-              <th>StrategyQA</th>
-              <th>MATH</th>
-              <th>MMLU (PM)</th>
-              <th>Avg.</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Zero-Shot Mixtral</td>
-              <td>24.000</td>
-              <td>57.200</td>
-              <td>38.571</td>
-              <td>79.600</td>
-              <td>49.843</td>
-            </tr>
-            <tr>
-              <td>Zero-Shot GPT-3.5</td>
-              <td>18.000</td>
-              <td>67.600</td>
-              <td>48.571</td>
-              <td>72.667</td>
-              <td>51.710</td>
-            </tr>
-            <tr>
-              <td>Meta LLM = TaskLLM = Mixtral</td>
-              <td>92.000</td>
-              <td>62.800</td>
-              <td>40.286</td>
-              <td>80.800</td>
-              <td>68.972</td>
-            </tr>
-            <tr>
-              <td>Meta LLM = Mistral; TaskLLM = Mixtral</td>
-              <td>78.000</td>
-              <td>58.800</td>
-              <td>39.714</td>
-              <td>80.000</td>
-              <td>64.129</td>
-            </tr>
-            <tr>
-              <td>Meta LLM=Mixtral; TaskLLM = GPT3.5</td>
-              <td>88.000</td>
-              <td>68.000</td>
-              <td>48.000</td>
-              <td>78.400</td>
-              <td>70.600</td>
-            </tr>
-            <tr>
-              <td>Meta LLM=Mistral; TaskLLM = GPT3.5</td>
-              <td>86.000</td>
-              <td>61.200</td>
-              <td>48.285</td>
-              <td>77.600</td>
-              <td>68.271</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-</div>
-</div>
-</section>
-
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash;/ Matting. &ndash;&gt;-->
+<!--</div>-->
+<!--</section>-->
 
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-4">Weaker LLMs can supervise Strong LLMs</h3>
-    <div class="content has-text-justified">
-      <p>
-        With PRomPTed, we can supervise or rewrite prompts for stronger LLMs such as GPT-4 using a set of weaker LLM
-        such as GPT-3.5.
-      </p>
-    </div>
-    <br>
-    <img src="./static/images/weaker.png" alt="A descriptive text about the image">
-  </div>
-</section>
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-3">Examples</h3>
-    <div class="content has-text-justified">
-      <p>
-         Example output and reason generation with PRomPTed. For an example of a Zero-Shot response using ChatGPT for a ToxicChat instance <a href="https://chat.openai.com/share/aaa49d15-7976-4703-afe2-b7fdc1f80177">click here</a>. 
-      </p>
-    </div>
-    <br>
-    <img src="./static/images/examples.png" alt="A descriptive text about the image">
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Title outside of the 'columns' container to ensure it is on its own line -->
-    <h3 class="title">Related Work</h3>
     <div class="columns is-centered">
-      <div class="column">
-        <md-block class="content" rendered="content">
-          <p>There are other Prompt Optimization papers that aim to find optimal prompts such as:</p>
-          <ul>
-            <li><code>OPRO</code>, <code>APE</code> and <code>PromptAgent</code> that focus on optimizing prompts in
-              few-shot settings.
-              <ul>
-                <li>Chengrun Yang, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V Le, Denny Zhou, & Xinyun Chen (2024).
-                  Large Language Models as Optimizers.
-                  In The Twelfth International Conference on Learning Representations.</li>
-                <li>Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han, Keiran Paster, Silviu Pitis, Harris Chan, & Jimmy Ba
-                  (2023). Large Language Models are Human-Level Prompt Engineers.
-                  In The Eleventh International Conference on Learning Representations .</li>
-                <li>Nancy Xu, Sam Masling, Michael Du, Giovanni Campagna, Larry Heck, James Landay, and Monica S. Lam.
-                  Grounding
-                  open-domain instructions to automate web support tasks. arXiv preprint arXiv:2103.16057 (2021).
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">MathVC Structure</h2>
+            <img src="./static/images/structure.png" alt="A descriptive text about the image">
+            <div class="content has-text-justified">
+                <p>
+                    Our system consists of two parts, i.e., meta planner for organizing the overall conversation and
+                    facilitating a smooth multi-stage student discussion, and character simulation for creating and
+                    updating individual student characters.
+                    <br>
+                    A key innovation of MATHVC lies in the use of symbolic schemas describing how characters form and
+                    gradually update their understanding of the mathematics problem. Specifically, we design the Task
+                    Schema to describe elements that are necessary for solving a given MM task and the Character Schema
+                    to show a student character's understanding and modeling plan. An example is shown below. The LLM
+                    edits the correct value 16 into 15 in the task schema to simulate the initial mistake made by the
+                    simulated student Charlie.
+                </p>
+                <img src="./static/images/schema.png" alt="A descriptive text about the image">
+
+            </div>
+
+
+            <!-- Interpolating. -->
+            <h3 class="title is-4">Human Evaluation</h3>
+            <div class="content has-text-justified">
+                <p>
+                    We also compare MathVC with four baselines.
+                <li>Vanilla Simulation: We directly present the LLM the math question, the student characteristics, and
+                    the dialogue history, and then instruct the LLM to generate responses as a middleschool student.
                 </li>
-                <li>Xinyuan Wang, Chenxi Li, Zhen Wang, Fan Bai, Haotian Luo, Jiayou Zhang, Nebojsa Jojic, Eric Xing, &
-                  Zhiting Hu (2024). PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt
-                  Optimization.
-                  In The Twelfth International Conference on Learning Representations.
+                <li>Domain-Specified Simulation: We augment the vanilla simulation with domain-specific knowledge.
+                    <ul>
+                        <li>w/ only character schema: We augment domain-specific simulation with the character schema.
+                        </li>
+                        <li>w/ only the meta planner: We augment domain-specific simulation with the meta planner.
+                        </li>
+                    </ul>
                 </li>
-              </ul>
-            </li>
-          </ul>
-        </md-block>
-      </div>
+                <br>
+                The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment and conversational procedural alignment it reflected (1: worst; 4: best).
+
+                </p>
+            </div>
+            <br>
+            <!-- TABLE CODE HERE -->
+            <div class="table-container">
+                <table class="table is-striped is-hoverable is-fullwidth">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Characteristic Alignment</th>
+                        <th>Conversational Procedural Alignment</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Vanilla Simulation</td>
+                        <td>2.85</td>
+                        <td>2.88</td>
+                    </tr>
+                    <tr>
+                        <td>Domain-Specified Simulation</td>
+                        <td>3.30</td>
+                        <td>3.15</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only character schema</td>
+                        <td>3.50</td>
+                        <td>3.20</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only the meta planner</td>
+                        <td>3.00</td>
+                        <td>3.10</td>
+                    </tr>
+                    <tr>
+                        <td>MathVC</td>
+                        <td>3.73</td>
+                        <td>3.530</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
-  
-  
+
+
+<!--<section class="section">-->
+<!--    <div class="container is-max-desktop">-->
+<!--        <h3 class="title is-4">Weaker LLMs can supervise Strong LLMs</h3>-->
+<!--        <div class="content has-text-justified">-->
+<!--            <p>-->
+<!--                With PRomPTed, we can supervise or rewrite prompts for stronger LLMs such as GPT-4 using a set of weaker-->
+<!--                LLM-->
+<!--                such as GPT-3.5.-->
+<!--            </p>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <img src="./static/images/weaker.png" alt="A descriptive text about the image">-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <h3 class="title is-3">Examples</h3>
+        <div class="content has-text-justified">
+            <p>
+                 In the vanilla simulation, the discussion bypasses many discussion stages (e.g., establishing the team organization), and Alice, who is bad at mathematics, does not make any mistakes. The domain-specified simulation made some improvements, such as simulating responses that are shorter and can simulate how students establish shared task understanding before planning on problem-solving, although it is still unable to simulate a fully extended, multi-stage conversation (e.g., team organization is still missing). In MATHVC, the conversation successfully goes over all stages. It also simulates how Alice makes a calculation mistake initially, which is then corrected by Charlie. Like a real student, Alice then adjusts her modeling plan based on Charlie’s explanation.
+            </p>
+        </div>
+        <br>
+        <img src="./static/images/example.png" alt="A descriptive text about the image">
+    </div>
+</section>
+
+
+<!--<section class="section">-->
+<!--    <div class="container is-max-desktop">-->
+<!--        &lt;!&ndash; Title outside of the 'columns' container to ensure it is on its own line &ndash;&gt;-->
+<!--        <h3 class="title">Related Work</h3>-->
+<!--        <div class="columns is-centered">-->
+<!--            <div class="column">-->
+<!--                <md-block class="content" rendered="content">-->
+<!--                    <p>There are other Prompt Optimization papers that aim to find optimal prompts such as:</p>-->
+<!--                    <ul>-->
+<!--                        <li><code>OPRO</code>, <code>APE</code> and <code>PromptAgent</code> that focus on optimizing-->
+<!--                            prompts in-->
+<!--                            few-shot settings.-->
+<!--                            <ul>-->
+<!--                                <li>Chengrun Yang, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V Le, Denny Zhou, & Xinyun-->
+<!--                                    Chen (2024).-->
+<!--                                    Large Language Models as Optimizers.-->
+<!--                                    In The Twelfth International Conference on Learning Representations.-->
+<!--                                </li>-->
+<!--                                <li>Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han, Keiran Paster, Silviu Pitis, Harris-->
+<!--                                    Chan, & Jimmy Ba-->
+<!--                                    (2023). Large Language Models are Human-Level Prompt Engineers.-->
+<!--                                    In The Eleventh International Conference on Learning Representations .-->
+<!--                                </li>-->
+<!--                                <li>Nancy Xu, Sam Masling, Michael Du, Giovanni Campagna, Larry Heck, James Landay, and-->
+<!--                                    Monica S. Lam.-->
+<!--                                    Grounding-->
+<!--                                    open-domain instructions to automate web support tasks. arXiv preprint-->
+<!--                                    arXiv:2103.16057 (2021).-->
+<!--                                </li>-->
+<!--                                <li>Xinyuan Wang, Chenxi Li, Zhen Wang, Fan Bai, Haotian Luo, Jiayou Zhang, Nebojsa-->
+<!--                                    Jojic, Eric Xing, &-->
+<!--                                    Zhiting Hu (2024). PromptAgent: Strategic Planning with Language Models Enables-->
+<!--                                    Expert-level Prompt-->
+<!--                                    Optimization.-->
+<!--                                    In The Twelfth International Conference on Learning Representations.-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </md-block>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{srivastava2024instances,
-      title={Instances Need More Care: Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance}, 
-      author={Saurabh Srivastava and Chengyue Huang and Weiguo Fan and Ziyu Yao},
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{yue2024mathvc,
+      title={MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education},
+      author={Murong Yue and Wijdane Mifdal and Yixuan Zhang and Jennifer Suh and Ziyu Yao},
       year={2024},
-      eprint={2310.02107},
+      eprint={2404.06711},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }</code></pre>
-  </div>
+    </div>
 </section>
 
 
-<div class="container is-max-desktop content">
-      <h2 class="title">Corresponding Authors</h2>
-      <div class="column is-10 is-offset-1">
-        <div class="columns has-text-centered">
-          <div class="column">
-            <figure class="image is-128x128" style="margin-left: auto; margin-right: auto">
-              <a href="https://saurabhsriv.com/">
-                <img class="is-rounded profile" src="./static/images/ss.png">
-              </a>
-              <a href="https://saurabhsriv.com/">
-                <figcaption>Saurabh Srivastava</figcaption>
-              </a>
-          </figure></div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin-left: auto; margin-right: auto">
-              <a href="http://ziyuyao.org">
-                <img class="is-rounded profile" src="./static/images/ziyu.jpeg">
-              </a>
-              <a href="https://ziyuyao.org">
-                <figcaption>Ziyu Yao</figcaption>
-              </a>
-          </figure></div>
-      </div>
-    </div>
-</div>
-  
+<!--<div class="container is-max-desktop content">-->
+<!--    <h2 class="title">Corresponding Authors</h2>-->
+<!--    <div class="column is-10 is-offset-1">-->
+<!--        <div class="columns has-text-centered">-->
+<!--            <div class="column">-->
+<!--                <figure class="image is-128x128" style="margin-left: auto; margin-right: auto">-->
+<!--                    <a href="https://saurabhsriv.com/">-->
+<!--                        <img class="is-rounded profile" src="./static/images/ss.png">-->
+<!--                    </a>-->
+<!--                    <a href="https://saurabhsriv.com/">-->
+<!--                        <figcaption>Saurabh Srivastava</figcaption>-->
+<!--                    </a>-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--            <div class="column">-->
+<!--                <figure class="image is-128x128" style="margin-left: auto; margin-right: auto">-->
+<!--                    <a href="http://ziyuyao.org">-->
+<!--                        <img class="is-rounded profile" src="./static/images/ziyu.jpeg">-->
+<!--                    </a>-->
+<!--                    <a href="https://ziyuyao.org">-->
+<!--                        <figcaption>Ziyu Yao</figcaption>-->
+<!--                    </a>-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-  
 
-  
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/abs/2310.02107">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/salokr" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/salokr/prompted.github.io/">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<!--<footer class="footer">-->
+<!--    <div class="container">-->
+<!--        <div class="content has-text-centered">-->
+<!--            <a class="icon-link"-->
+<!--               href="https://arxiv.org/abs/2310.02107">-->
+<!--                <i class="fas fa-file-pdf"></i>-->
+<!--            </a>-->
+<!--            <a class="icon-link" href="https://github.com/salokr" class="external-link" disabled>-->
+<!--                <i class="fab fa-github"></i>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        <div class="columns is-centered">-->
+<!--            <div class="column is-8">-->
+<!--                <div class="content">-->
+<!--                    <p>-->
+<!--                        This website is licensed under a <a rel="license"-->
+<!--                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative-->
+<!--                        Commons Attribution-ShareAlike 4.0 International License</a>.-->
+<!--                    </p>-->
+<!--                    <p>-->
+<!--                        This means you are free to borrow the <a-->
+<!--                            href="https://github.com/salokr/prompted.github.io/">source code</a> of this website,-->
+<!--                        we just ask that you link back to this page in the footer.-->
+<!--                        Please remember to remove the analytics code included in the header of the website which-->
+<!--                        you do not want on your website.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 </body>
 </html>
