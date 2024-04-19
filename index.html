@@ -28,6 +28,11 @@
 
 
 
+
+
+
+
+
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -113,9 +118,9 @@
                     </div>
 
                     <div class="is-size-5 publication-authors">
-                        <span class="author-block"><sup>1</sup>Department of Computer Science, George Mason University</span>
-                        <span class="author-block"><sup>2</sup>Department of Computer Science, College of William&Mary</span>
-                        <span class="author-block"><sup>3</sup>Mathematics Education, School of Education, George Mason University</span>
+                        <div><sup>1</sup>Department of Computer Science, George Mason University</div>
+                        <div><sup>2</sup>Department of Computer Science, College of William&Mary</div>
+                        <div><sup>3</sup>Mathematics Education, School of Education, George Mason University</div>
 
                     </div>
                     <div class="is-size-8 publication-authors">
@@ -134,7 +139,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-                            <!--              <span class="link-block">-->
+                            <!--                                          <span class="link-block">-->
                             <!--                <a href="https://huggingface.co/spaces/salokr/PRomPTed"-->
                             <!--                   class="external-link button is-normal is-rounded is-dark">-->
                             <!--                  <span class="icon">-->
@@ -153,16 +158,16 @@
                             <!--                  <span>Paper</span>-->
                             <!--                </a>-->
                             <!--              </span>-->
-                            <!-- Code Link. -->
-                            <!--              <span class="link-block">-->
-                            <!--                <a href="https://github.com/salokr/PRoPMTed"-->
-                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
-                            <!--                  <span class="icon">-->
-                            <!--                      <i class="fab fa-github"></i>-->
-                            <!--                  </span>-->
-                            <!--                  <span>Code</span>-->
-                            <!--                  </a>-->
-                            <!--              </span>-->
+                            <!--                             Code Link. -->
+                            <span class="link-block">
+                                            <a href="https://github.com/MurongYue"
+                                               class="external-link button is-normal is-rounded is-dark">
+                                              <span class="icon">
+                                                  <i class="fab fa-github"></i>
+                                              </span>
+                                              <span>Code</span>
+                                              </a>
+                                          </span>
                             <!-- Dataset Link. -->
                         </div>
 
@@ -607,6 +612,32 @@
 <!--</div>-->
 <!--</section>-->
 
+<section class="section">
+    <div class="columns is-centered">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Motivations and Challenges</h2>
+            <div class="content has-text-justified">
+                <p>
+                    Mathematical modeling (MM) is a critical skill for students pursuing STEM fields. However,
+                    orchestrating such discussions and collaborative learning activities can be very challenging for
+                    teachers, especially for the marginalized communities. On the other hand, LLMs present strong math
+                    reasoning capabilities in understanding and solving mathematics problems and autonomous LLM-based
+                    generative agents have showcased the capacity to simulate human activities. Therefore, observing the
+                    pressing need to enhance MM education for resource-limited communities and getting inspired by the
+                    striking progress made by LLMs, in this work, we propose MathVC.
+                    <br>
+                    <br>
+                    We identified two unique challenges in the development of MathVC. The first challenge is <b>characteristic
+                    alignment</b>, i.e., aligning an LLM’s character simulation to the authentic characteristics of real
+                    human students. The second challenge is <b>conversational procedural alignment</b>, i.e., aligning
+                    the overall conversational procedure to an authentic MM discussion among middle-school students.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 <section class="section">
     <div class="columns is-centered">
@@ -633,67 +664,67 @@
 
             <!-- Interpolating. -->
             <!--            <h3 class="title is-4">Human Evaluation</h3>-->
-<!--            <div class="content has-text-justified">-->
-<!--                <p>-->
-<!--                    We compare MathVC with four baselines.-->
-<!--                <li>Vanilla Simulation: We directly present the LLM the math question, the student characteristics, and-->
-<!--                    the dialogue history, and then instruct the LLM to generate responses as a middleschool student.-->
-<!--                </li>-->
-<!--                <li>Domain-Specified Simulation: We augment the vanilla simulation with domain-specific knowledge.-->
-<!--                    <ul>-->
-<!--                        <li>w/ only character schema: We augment domain-specific simulation with the character schema.-->
-<!--                        </li>-->
-<!--                        <li>w/ only the meta planner: We augment domain-specific simulation with the meta planner.-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </li>-->
-<!--                <br>-->
-<!--                The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment-->
-<!--                and conversational procedural alignment it reflected (1: worst; 4: best).-->
+            <!--            <div class="content has-text-justified">-->
+            <!--                <p>-->
+            <!--                    We compare MathVC with four baselines.-->
+            <!--                <li>Vanilla Simulation: We directly present the LLM the math question, the student characteristics, and-->
+            <!--                    the dialogue history, and then instruct the LLM to generate responses as a middleschool student.-->
+            <!--                </li>-->
+            <!--                <li>Domain-Specified Simulation: We augment the vanilla simulation with domain-specific knowledge.-->
+            <!--                    <ul>-->
+            <!--                        <li>w/ only character schema: We augment domain-specific simulation with the character schema.-->
+            <!--                        </li>-->
+            <!--                        <li>w/ only the meta planner: We augment domain-specific simulation with the meta planner.-->
+            <!--                        </li>-->
+            <!--                    </ul>-->
+            <!--                </li>-->
+            <!--                <br>-->
+            <!--                The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment-->
+            <!--                and conversational procedural alignment it reflected (1: worst; 4: best).-->
 
-<!--                </p>-->
-<!--            </div>-->
-<!--            <br>-->
-<!--            &lt;!&ndash; TABLE CODE HERE &ndash;&gt;-->
-<!--            <div class="table-container">-->
-<!--                <table class="table is-striped is-hoverable is-fullwidth">-->
-<!--                    <thead>-->
-<!--                    <tr>-->
-<!--                        <th></th>-->
-<!--                        <th>Characteristic Alignment</th>-->
-<!--                        <th>Conversational Procedural Alignment</th>-->
-<!--                    </tr>-->
-<!--                    </thead>-->
-<!--                    <tbody>-->
-<!--                    <tr>-->
-<!--                        <td>Vanilla Simulation</td>-->
-<!--                        <td>2.85</td>-->
-<!--                        <td>2.88</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Domain-Specified Simulation</td>-->
-<!--                        <td>3.30</td>-->
-<!--                        <td>3.15</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only character schema</td>-->
-<!--                        <td>3.50</td>-->
-<!--                        <td>3.20</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only the meta planner</td>-->
-<!--                        <td>3.00</td>-->
-<!--                        <td>3.10</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>MathVC</td>-->
-<!--                        <td>3.73</td>-->
-<!--                        <td>3.530</td>-->
-<!--                    </tr>-->
-<!--                    </tbody>-->
-<!--                </table>-->
-<!--            </div>-->
-<!--        </div>-->
+            <!--                </p>-->
+            <!--            </div>-->
+            <!--            <br>-->
+            <!--            &lt;!&ndash; TABLE CODE HERE &ndash;&gt;-->
+            <!--            <div class="table-container">-->
+            <!--                <table class="table is-striped is-hoverable is-fullwidth">-->
+            <!--                    <thead>-->
+            <!--                    <tr>-->
+            <!--                        <th></th>-->
+            <!--                        <th>Characteristic Alignment</th>-->
+            <!--                        <th>Conversational Procedural Alignment</th>-->
+            <!--                    </tr>-->
+            <!--                    </thead>-->
+            <!--                    <tbody>-->
+            <!--                    <tr>-->
+            <!--                        <td>Vanilla Simulation</td>-->
+            <!--                        <td>2.85</td>-->
+            <!--                        <td>2.88</td>-->
+            <!--                    </tr>-->
+            <!--                    <tr>-->
+            <!--                        <td>Domain-Specified Simulation</td>-->
+            <!--                        <td>3.30</td>-->
+            <!--                        <td>3.15</td>-->
+            <!--                    </tr>-->
+            <!--                    <tr>-->
+            <!--                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only character schema</td>-->
+            <!--                        <td>3.50</td>-->
+            <!--                        <td>3.20</td>-->
+            <!--                    </tr>-->
+            <!--                    <tr>-->
+            <!--                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only the meta planner</td>-->
+            <!--                        <td>3.00</td>-->
+            <!--                        <td>3.10</td>-->
+            <!--                    </tr>-->
+            <!--                    <tr>-->
+            <!--                        <td>MathVC</td>-->
+            <!--                        <td>3.73</td>-->
+            <!--                        <td>3.530</td>-->
+            <!--                    </tr>-->
+            <!--                    </tbody>-->
+            <!--                </table>-->
+            <!--            </div>-->
+        </div>
     </div>
 </section>
 
@@ -779,7 +810,17 @@
                 </tr>
                 </tbody>
             </table>
-
+            <p>
+                Takeaways:
+            <li>Incorporating domain knowledge improves the simulation quality.</li>
+            <li>Including character schema enhances characteristic alignment, but including meta planner enhances
+                alignment only when used with character schema.
+            </li>
+            <li>MathVC offers the most aligned simulation by harmoniously integrating character
+                schema with meta planner.
+            </li>
+            <br>
+            </p>
             <h3 class="title is-4">Case Study</h3>
 
             <div class="content has-text-justified">
@@ -796,8 +837,11 @@
                 </p>
             </div>
             <br>
-            <img src="./static/images/example.png" alt="A descriptive text about the image">
+            <img src="./static/images/example.png" alt="A descriptive text about the image"
+                 style="display: block; margin-left: auto; margin-right: auto;">
+
         </div>
+    </div>
 </section>
 
 
@@ -846,10 +890,66 @@
 <!--    </div>-->
 <!--</section>-->
 
+<section class="section" id="Discussion">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Discussion and Future Work</h2>
+        <p>
+            Our research is motivated by the pressing need to alleviate the dependence on teachers to
+            orchestrate collaborative student learning for mathematics modeling (MM), a critical skill
+            in STEM fields. To the best of our knowledge, MathVC is the very first LLM-powered
+            multi-character virtual classroom designed for this purpose. We envision that such a
+            platform can eventually be deployed as effective take-home exercises for students practicing
+            their MM skills. This is particularly important for marginalized communities where only
+            limited teachers and educational resources are available, and our system has the potential
+            to become a tool to promote educational equity. In addition, we also identify a few other
+            benefits of how MathVC could assist students in learning. For example, MathVC can
+            reduce the pressure and anxiety of students for taking peer discussions, thus increasing
+            their opportunities to participate. This is especially beneficial for students who may be
+            reluctant to participate due to shyness, low self-esteem, language barriers, or poor academic
+            performance. Our system thus promotes inclusion, allowing a greater variety of students
+            to participate, thereby increasing diversity and breadth. Finally, we note that teachers
+            have the flexibility to configure the student characters according to each human student’s
+            background and performance, which can thus enable personalized learning experiences.
+            In the future, one could also extend our system to automatically optimize the character
+            configuration based on the student’s past performance.
+            <br><br>
+            Despite all the promises discussed above, however, we still have some future works to do:
+        <li><b>User friendly interface:</b> Developing a student friendly interface.</li>
+        <li><b>Pilot study:</b> Conducting a pilot study with real human students to obtain more
+            feedbacks.</li>
+        <li><b>Collecting real-life data:</b> Collecting more real-life data from student and finetune LLMs to enhance the alignments.</li>
+        <li><b>More characteristics simulation:</b> Conducting extension of our system could be to enable richer
+characteristics simulation, including but not limited to gender, age, name, culture, language,
+and academic background.</li>
+
+
+        </p>
+
+    </div>
+</section>
+
+
+<section class="section" id="Acknowledge">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Acknowledge</h2>
+        <p>We were grateful to receive support from Microsoft’s Accelerating Foundation Models Research program (<a
+                href="https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/">https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/</a>)
+            for conducting this research. We also appreciate computing resources from the Office of Research Computing (<a
+                    href="https://orc.gmu.edu">https://orc.gmu.edu</a>) and funding support from the Department of
+            Computer Science at GMU. W. Mifdal was sponsored by the Office of Student Creative Activities and Research
+            (OSCAR) at GMU. We thank Dr. Anthony Eamonn Kelly (GMU, Educational Psychology) and Dr. Melissa A. Gallagher
+            (University of Houston, Department of Curriculum & Instruction) for early discussions about the idea, and
+            students in the GMU NLP group (<a href="https://nlp.cs.gmu.edu/">https://nlp.cs.gmu.edu/</a>) for their
+            thoughtful comments.</p>
+
+    </div>
+</section>
+
 
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
+        <p>If you find our paper helpful, please cite it as follows</p>
         <pre><code>@misc{yue2024mathvc,
       title={MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education},
       author={Murong Yue and Wijdane Mifdal and Yixuan Zhang and Jennifer Suh and Ziyu Yao},
@@ -891,37 +991,37 @@
 <!--</div>-->
 
 
-<!--<footer class="footer">-->
-<!--    <div class="container">-->
-<!--        <div class="content has-text-centered">-->
-<!--            <a class="icon-link"-->
-<!--               href="https://arxiv.org/abs/2310.02107">-->
-<!--                <i class="fas fa-file-pdf"></i>-->
-<!--            </a>-->
-<!--            <a class="icon-link" href="https://github.com/salokr" class="external-link" disabled>-->
-<!--                <i class="fab fa-github"></i>-->
-<!--            </a>-->
-<!--        </div>-->
-<!--        <div class="columns is-centered">-->
-<!--            <div class="column is-8">-->
-<!--                <div class="content">-->
-<!--                    <p>-->
-<!--                        This website is licensed under a <a rel="license"-->
-<!--                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative-->
-<!--                        Commons Attribution-ShareAlike 4.0 International License</a>.-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                        This means you are free to borrow the <a-->
-<!--                            href="https://github.com/salokr/prompted.github.io/">source code</a> of this website,-->
-<!--                        we just ask that you link back to this page in the footer.-->
-<!--                        Please remember to remove the analytics code included in the header of the website which-->
-<!--                        you do not want on your website.-->
-<!--                    </p>-->
+<footer class="footer">
+    <div class="container">
+<!--                <div class="content has-text-centered">-->
+<!--                    <a class="icon-link"-->
+<!--                       href="https://arxiv.org/pdf/2404.06711.pdf">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                    </a>-->
+<!--                    <a class="icon-link" href="https://github.com/salokr" class="external-link" disabled>-->
+<!--                        <i class="fab fa-github"></i>-->
+<!--                    </a>-->
 <!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        This means you are free to borrow the <a
+                            href="https://github.com/salokr/prompted.github.io/">source code</a> of this website,
+                        we just ask that you link back to this page in the footer.
+                        Please remember to remove the analytics code included in the header of the website which
+                        you do not want on your website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
