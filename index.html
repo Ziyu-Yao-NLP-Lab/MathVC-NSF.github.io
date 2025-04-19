@@ -22,17 +22,6 @@
     gtag('config', 'G-PYVRSFMDRL');
 
 
-
-
-
-
-
-
-
-
-
-
-
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -76,17 +65,8 @@
                     More Research
                 </a>
                 <div class="navbar-dropdown">
-                    <a class="navbar-item" href="https://arxiv.org/pdf/2310.03094.pdf">
-                        LLM Cascading
-                    </a>
-                    <a class="navbar-item" href="https://arxiv.org/pdf/2308.04030.pdf">
-                        Gentopia
-                    </a>
-                    <a class="navbar-item" href="https://arxiv.org/pdf/2310.03249.pdf">
-                        LLMs as Planners
-                    </a>
-                    <a class="navbar-item" href="https://arxiv.org/pdf/2305.13469.pdf">
-                        MailEx
+                    <a class="navbar-item" href="https://github.com/Ziyu-Yao-NLP-Lab">
+                        Ziyu Yao's NLP Lab at GMU
                     </a>
                 </div>
             </div>
@@ -104,73 +84,7 @@
                     <h1 class="title is-1 publication-title">MathVC: An LLM-Simulated Multi-Character Virtual Classroom
                         for Mathematics Education</h1>
                     <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://murongyue.github.io/">Murong Yue</a><sup>1*</sup>,</span>
-                        <span class="author-block">
-              <a href="https://nlp.cs.gmu.edu/author/wijdane-mifdal/">Wijdane Mifdal</a><sup>1</sup>,</span>
-                        <span class="author-block">
-              <a href="https://zjanice.github.io/">Yixuan Zhang</a><sup>2</sup>,</span>
-                        <span class="author-block">
-              <a href="https://cehd.gmu.edu/people/faculty/jsuh/">Jennifer Suh</a><sup>3</sup>,</span>
-                        <span class="author-block">
-              <a href="http://ziyuyao.org">Ziyu Yao</a><sup>1*</sup>,
-            </span>
-                    </div>
-
-                    <div class="is-size-5 publication-authors">
-                        <div><sup>1</sup>Department of Computer Science, George Mason University</div>
-                        <div><sup>2</sup>Department of Computer Science, College of William&Mary</div>
-                        <div><sup>3</sup>Mathematics Education, School of Education, George Mason University</div>
-
-                    </div>
-                    <div class="is-size-8 publication-authors">
-                        <span class="author-block"><sup>*</sup><i>Corresponding Authors</i></span>
-                    </div>
-
-                    <div class="column has-text-centered">
-                        <div class="publication-links">
-                            <!-- PDF Link. -->
-                            <span class="link-block">
-                <a href="https://arxiv.org/pdf/2404.06711.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-                            <!--                                          <span class="link-block">-->
-                            <!--                <a href="https://huggingface.co/spaces/salokr/PRomPTed"-->
-                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
-                            <!--                  <span class="icon">-->
-                            <!--                      -->
-                            <!--                  </span>-->
-                            <!--                  <span>&#129303; Demo</span>-->
-                            <!--                </a>-->
-                            <!--              </span>-->
-                            <!-- Video Link. -->
-                            <!--              <span class="link-block">-->
-                            <!--                <a href="https://arxiv.org/abs/2310.02107"-->
-                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
-                            <!--                  <span class="icon">-->
-                            <!--                      <i class="fas fa-file-pdf"></i>-->
-                            <!--                  </span>-->
-                            <!--                  <span>Paper</span>-->
-                            <!--                </a>-->
-                            <!--              </span>-->
-                            <!--                             Code Link. -->
-                            <span class="link-block">
-                                            <a href="https://github.com/MurongYue/MathVC"
-                                               class="external-link button is-normal is-rounded is-dark">
-                                              <span class="icon">
-                                                  <i class="fab fa-github"></i>
-                                              </span>
-                                              <span>Code</span>
-                                              </a>
-                                          </span>
-                            <!-- Dataset Link. -->
-                        </div>
-
+                        <div><b>George Mason University</b> and <b>College of William & Mary</b></div>
                     </div>
                 </div>
             </div>
@@ -182,749 +96,311 @@
 <section class="section">
     <div class="container is-max-desktop">
         <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
+        <div class="columns is-centered">
+            <!-- <div class="column is-four-fifths"> -->
                 <!--         <h2 class="title is-3">Abstract</h2> -->
-                <div class="content has-text-justified">
-          <span style="font-weight:bold">
-            We present MathVC, the very first LLM-powered virtual classroom containing multiple LLM-simulated student characters, with whom a human student can practice their Mathematics Modeling skill. The effectiveness of the simulation approach was confirmed and the promise for MathVC to benefit real-life students in the future was shown in the paper.
-
-
-          <p>
-              <br>
-            An example demonstrating the application of MathVC, where students are presented a math problem (optionally with accompanied data) and engage in effective discussions on math modeling. Alice, Bob, and Charlie are LLM-simulated student characters. A human student can choose to respond or skip the current turn.
-          </p>
-              <!--PRomPTed is a novel approach to boost the zero-shot LLM performance by performing prompt rewriting. PRomPTed is task-agnostic and can work across many tasks such as Code Generation, Safe Content Generation, Mathematical and Logical Reasoning tasks, etc. In our paper we show at least 6% improvement in performance across 13 datasets and 10 task types using GPT-4! For more information, please read our paper and check out our GitHub repo . We also hosted a <a href="https://huggingface.co/spaces/salokr/PRomPTed">demo version</a>a of our approach on huggigface space. The approach works by-->
-              <!--<ul>-->
-              <!--            <li> Taking the initial prompt from the user. </li>-->
-              <!--<li> Execute the prompt against a target LLM (or Task LLM)</li>-->
-              <!--<li> A MetaLLM verifies if the output generated in the previous step is correct and safe.</li>-->
-              <!--<li> If the output is incorrect or unsafe, MetaLLM revises the prompt adding hints, solution guidance, and safe generation policies.</li>-->
-
-              <!--</ul>-->
-</span>
-                </div>
-            </div>
+                <!-- <div class="content has-text-justified"> -->
+                    <span style="font-weight:bold">
+                    MathVC, or Mathematical Virtual Classroom, is a platform including multiple Large Language Model (LLM)-simulated student characters, with whom human students can practice collaborative mathematical problem-solving. The goal of MathVC is to leverage the power of Generative AI technologies to enhance Mathematics Education, particularly the Mathematical Modeling competencies of middle-school students.
+                    <br><br>
+                    Mathematical modeling involves the cognitively demanding process of translating real-life situations into mathematical notations and is a fundamental skill for students pursuing science, technology, engineering, and mathematics (STEM). Cultivating mathematical modeling through collaborative learning can be particularly effective, but orchestrating such collaborative learning tasks requires significant efforts from teachers to oversee group discussions. In addition, students may not receive effective training from the group discussions, due to reasons such as mental barriers (e.g., anxiety) in peer interactions.
+                    <br><br>
+                    Through MathVC, the project aims to increase the opportunities for students to receive effective mathematics education. The project will also use the MathVC platform as a lens to understand the opportunities and risks of Generative AI techniques and provide insights for future researchers and educators.
+                    <br><br>
+                    An example is shown below.
+                    </span>
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
         <!--/ Abstract. -->
 </section>
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <start the video section> -->
-<!-- <div class="column is-centered has-text-centered is-10 is-offset-1" id="teaserVideos">
-    <div class="columns is-centered is-variable is-0">
-      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
-        <div class="overlay">
-          <p>(a) Find one-way flights from New York to Toronto.</p>
-        </div>
-        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
-          <source src="./static/videos/united_0.mp4" type="video/mp4">
-        </video>
-
-      </div>
-      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
-        <div class="overlay">
-          <p>(b) Book a roundtrip on July 1 from Mumbai to London and vice versa on July 5 for two adults and a
-            12-year-old in premium
-            economy and if a flight is not available, search through the calendar for available flights.</p>
-        </div>
-        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
-          <source src="./static/videos/united_1.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
-        <div class="overlay">
-          <p>(c) Search receipt with the eTicket 12345678 for the trip reserved by Jason Two</p>
-        </div>
-        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
-          <source src="./static/videos/united_2.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <div class="columns is-centered is-variable is-0">
-      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
-        <div class="overlay">
-          <p>(d) Find a flight from Chicago to London on 20 April and return on 23 April.</p>
-        </div>
-        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
-          <source src="./static/videos/aa_0.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
-        <div class="overlay">
-          <p>(e) Search for the interactions between ibuprofen and aspirin.
-          </p>
-        </div>
-        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
-          <source src="./static/videos/webmd_0.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="column" style="position:relative; width:100%; padding:0px; font-size:0em">
-        <div class="overlay">
-          <p>(f) As a Verizon user, finance a blue iPhone 13 with 256gb along with monthly apple care.</p>
-        </div>
-        <video class="video" controls="" autoplay="" playsinline="" muted="" loop="">
-          <source src="./static/videos/bestbuy_0.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-</div>
- -->
-<!-- <end the video section> -->
 <div class="container is-max-desktop">
-    <img src="./static/images/overview.png" alt="A descriptive text about the image">
+    <img src="./static/images/overview.png" alt="MathVC Overview" style="width: 800px; height: auto; display: block; margin: 0 auto;">
 </div>
 
-
-<section class="section">
+<section class="section" id="Updates">
     <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Abstract</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        Mathematical modeling (MM) is considered a fundamental skill for students in STEM disciplines.
-                        Practicing the MM skill is often the most effective when students can engage in group discussion
-                        and collaborative problem-solving. However, due to unevenly distributed teachers and educational
-                        resources needed to monitor such group activities, students do not always receive equal
-                        opportunities for this practice. Excitingly, large language models (LLMs) have recently
-                        demonstrated strong capability in both modeling mathematical problems and simulating characters
-                        with different traits and properties. Drawing inspiration from the advancement of LLMs, in this
-                        work, we present MATHVC, the very first LLM-powered virtual classroom containing multiple
-                        LLM-simulated student characters, with whom a human student can practice their MM skill. To
-                        encourage each LLM character’s behaviors to be aligned with their specified math-relevant
-                        properties (termed “characteristics alignment”) and the overall conversational procedure to be
-                        close to an authentic student MM discussion (termed “conversational procedural alignment”), we
-                        proposed three innovations: integrating MM domain knowledge into the simulation, defining
-                        symbolic schema as the ground for character simulation, and designing a meta planner at the
-                        platform level to drive the conversational procedure. Through experiments and ablation studies,
-                        we confirmed the effectiveness of our simulation approach and showed the promise for MATHVC to
-                        benefit real-life students in the future.
-                    </p>
-                </div>
-            </div>
+        <h2 class="title is-3">Updates</h2>
+        <div class="columns is-centered">
+            <ul>
+                <li>04/2025: We will be organizing the <a href="https://sites.google.com/view/mathedventure/home">Math EdVenture Camp</a> at GMU during July 7-11, 2025. <a href="https://sites.google.com/view/mathedventure/registration-forms">Go Register Here!</a></li>
+                <li>02/2025: We started a pilot study inviting middle-school students from Virginia to provide feedback on the MathVC prototype!</li>
+                <li>02/2025: The MathVC system prototype paper is accepted to the AAAI Workshop on AI4Edu! </li>
+                <li>04/2024: <a href="https://arxiv.org/pdf/2404.06711.pdf">ArXiv</a> version is online. Please check out our preprint.
+                </li>
+            </ul>
         </div>
-        <!--/ Abstract. -->
     </div>
 </section>
 
 
-<section class="section">
-    <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <!--         <h2 class="title is-3">Abstract</h2> -->
-                <div class="content has-text-justified">
-                    <md-block rendered="content"><p><em>Updates</em></p>
-                        <ul>
-                            <!--<li>2024-04-05: <a href="https://huggingface.co/spaces/salokr/PRomPTed">&#129303; demo</a> is online. Get your api-keys ready and check it out.</li>-->
-                            <li>The demo and code are coming soon!</li>
-                            <li>2024-04: <a href="https://arxiv.org/pdf/2404.06711.pdf">ArXiv</a> version is online.
-                                Please check out our preprint.
-                            </li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-        <!--/ Abstract. -->
-    </div>
-</section>
-
-
-<!--/ table starts here -->
-
-<!--<div style="width: 70%; margin: 0 auto;">-->
-<!--  <div class="column is-full-width interpolation-panel">-->
-<!--    <div class="columns">-->
-<!--      <div class="column is-one-third">-->
-<!--        <table class="table is-hoverable is-striped" style="margin: 0 auto; background-color: rgba(0,0,0,0)">-->
-<!--          <thead>-->
-<!--            <tr>-->
-<!--              <th style="border: 0"></th>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--              <th>Approaches&#8595;</th>-->
-<!--            </tr>-->
-<!--          </thead>-->
-<!--          <tbody>-->
-<!--            <tr>-->
-<!--              <td style="font-weight: bold">Vanilla Simulation</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--              <td style="font-weight: bold">Domain-Specified Simulation</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--              <td style="font-weight: bold">Domain-Specified Simulation w/ only character schema</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--              <td style="font-weight: bold">Domain-Specified Simulation w/ only meta planner</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--              <td style="font-weight: bold">MathVC</td>-->
-<!--            </tr>-->
-
-<!--          </tbody>-->
-<!--        </table>-->
-<!--      </div>-->
-<!--      <div class="column is-two-thirds">-->
-<!--        <div class="table-container">-->
-<!--          <div class="columns">-->
-<!--            <div class="column">-->
-<!--              <table class="table is-hoverable is-striped"-->
-<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">-->
-<!--                <thead style="text-align: center;">-->
-<!--                  <tr>-->
-<!--                    <th colspan="2">Metric</th>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <th style="width: 50%">GSM8K</a>-->
-<!--                    </th>-->
-<!--                    <th style="width: 50%">MATH</a>-->
-<!--                    </th>-->
-<!--                  </tr>-->
-<!--                </thead>-->
-<!--                <tbody>-->
-<!--                  <tr>-->
-<!--                    <td>92.400</td>-->
-<!--                    <td>48.857</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>93.600</td>-->
-<!--                    <td>56.571</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>94.000</td>-->
-<!--                    <td>57.143</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>94.400</td>-->
-<!--                    <td>61.143</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>94.400</td>-->
-<!--                    <td>61.143</td>-->
-<!--                  </tr>-->
-<!--                </tbody>-->
-<!--              </table>-->
-<!--            </div>-->
-<!--            <div class="column">-->
-<!--              <table class="table is-hoverable is-striped"-->
-<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:250px; text-align: center;">-->
-<!--                <thead style="text-align: center;">-->
-<!--                  <tr>-->
-<!--                    <th colspan="1">Code Generation</th>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <th style="width: 100%"><a-->
-<!--                        href="https://academictorrents.com/details/411576c7e80787e4b40452360f5f24acba9b5159"-->
-<!--                        target="_blank">HumanEval</a></th>-->
-<!--                    </th>-->
-<!--                  </tr>-->
-<!--                </thead>-->
-<!--                <tbody>-->
-<!--                  <tr>-->
-<!--                    <td>67.000</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>73.460</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>74.585</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>78.659</td>-->
-<!--                  </tr>-->
-<!--                </tbody>-->
-<!--              </table>-->
-<!--            </div>-->
-<!--            <div class="column">-->
-<!--              <table class="table is-hoverable is-striped"-->
-<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">-->
-<!--                <thead style="text-align: center;">-->
-<!--                  <tr>-->
-<!--                    <th colspan="2">Logical Reasoning</th>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <th style="width: 50%"><a href="https://paperswithcode.com/dataset/pixelhelp"-->
-<!--                        target="_blank">Logical-->
-<!--                        Deductions</a></th>-->
-<!--                    <th style="width: 50%"><a href="https://x-lance.github.io/META-GUI-Leaderboard/"-->
-<!--                        target="_blank">Penguins</a></th>-->
-<!--                  </tr>-->
-<!--                </thead>-->
-<!--                <tbody>-->
-<!--                  <tr>-->
-<!--                    <td>34.500</td>-->
-<!--                    <td>59.286</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>58.900</td>-->
-<!--                    <td>62.143</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>66.500</td>-->
-<!--                    <td>72.734</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>75.600</td>-->
-<!--                    <td>69.343</td>-->
-<!--                  </tr>-->
-<!--                </tbody>-->
-<!--              </table>-->
-<!--            </div>-->
-<!--            <div class="column">-->
-<!--              <table class="table is-hoverable is-striped"-->
-<!--                style="margin: 0 auto; background-color: rgba(0,0,0,0); width:400px; text-align: center;">-->
-<!--                <thead style="text-align: center;">-->
-<!--                  <tr>-->
-<!--                    <th colspan="2">Domain Specific IE</th>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <th style="width: 50%"><a-->
-<!--                        href="https://github.com/google-research-datasets/dstc8-schema-guided-dialogue"-->
-<!--                        target="_blank">MedQA</a></th>-->
-<!--                    <th style="width: 50%"><a href="https://github.com/budzianowski/multiwoz" target="_blank">CyNER</a>-->
-<!--                    </th>-->
-<!--                  </tr>-->
-<!--                </thead>-->
-<!--                <tbody>-->
-<!--                  <tr>-->
-<!--                    <td>86.800</td>-->
-<!--                    <td>38.910</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>88.800</td>-->
-<!--                    <td>39.690</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>90.400</td>-->
-<!--                    <td>63.770</td>-->
-<!--                  </tr>-->
-<!--                  <tr>-->
-<!--                    <td>92.800</td>-->
-<!--                    <td>73.070</td>-->
-<!--                  </tr>-->
-<!--                </tbody>-->
-<!--              </table>-->
-<!--            </div>-->
-
-
-<!--&lt;!&ndash; put other table codes here&ndash;&gt;-->
-<!--&lt;!&ndash; put other table codes here&ndash;&gt;-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--/ table ends here -->
-
-<!--<section class="section">  -->
-<!--<div class="container is-max-desktop">-->
-<!--  <div class="columns is-centered">-->
-<!--    &lt;!&ndash; Visual Effects. &ndash;&gt;-->
-<!--    <div class="column">-->
-<!--      <div class="content">-->
-<!--        <h2 class="title is-3">PRomPTed V. Baselines</h2>-->
-<!--        <p>-->
-<!--          We compare PRomPTed with multiple baselines including Zero-Shot, Zero-Shot-CoT-->
-<!--          and Output Refinement. Unlike Output-Refinement, PRomPTed refines the test instance directly.-->
-<!--        </p>-->
-<!--        <img src="./static/images/comparison.png" alt="A descriptive text about the image">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
-
-<!--    &lt;!&ndash; Average Performance &ndash;&gt;-->
-<!--    <div class="column">-->
-<!--      <h2 class="title is-3">Average Performance</h2>-->
-<!--      <div class="columns is-centered">-->
-<!--        <div class="column content">-->
-<!--          <p>-->
-<!--            On average, PRomPTed outperforms the baselines when using both stronger-->
-<!--            and weaker backbones like GPT-4 and GPT-3.5.-->
-<!--          </p>-->
-<!--          <img src="./static/images/average.png" alt="A descriptive text about the image">-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  &lt;!&ndash;/ Matting. &ndash;&gt;-->
-<!--</div>-->
-<!--</section>-->
-
-<section class="section">
+<section class="section" id="Publications">
     <div class="columns is-centered">
         <div class="container is-max-desktop">
-            <h2 class="title is-3">Motivations and Challenges</h2>
+            <h2 class="title is-3">Publications</h2>
+            <p>(^ denotes equal contributions)</p>
             <div class="content has-text-justified">
-                <p>
-                    Mathematical modeling (MM) is a critical skill for students pursuing STEM fields. However,
-                    orchestrating such discussions and collaborative learning activities can be very challenging for
-                    teachers, especially for the marginalized communities. On the other hand, LLMs present strong math
-                    reasoning capabilities in understanding and solving mathematics problems and autonomous LLM-based
-                    generative agents have showcased the capacity to simulate human activities. Therefore, observing the
-                    pressing need to enhance MM education for resource-limited communities and getting inspired by the
-                    striking progress made by LLMs, in this work, we propose MathVC.
-                    <br>
-                    <br>
-                    We identified two unique challenges in the development of MathVC. The first challenge is <b>characteristic
-                    alignment</b>, i.e., aligning an LLM’s character simulation to the authentic characteristics of real
-                    human students. The second challenge is <b>conversational procedural alignment</b>, i.e., aligning
-                    the overall conversational procedure to an authentic MM discussion among middle-school students.
-                </p>
+                <li>Murong Yue^, Wenhan Lyu^, Wijdane Mifdal, Jennifer Suh, Yixuan Zhang, and Ziyu Yao. "MathVC: An llm-simulated multi-character virtual classroom for mathematics education." AAAI Workshop on AI4Edu, 2025. [<a href="https://arxiv.org/pdf/2404.06711">Paper</a>][<a href="https://murongyue.github.io/MathVC.github.io/">Website</a>] </li>
+                <button id="showBibButton1">Show Bibliography</button>
+                <div id="bibContainer1" class="bib-container">
+                    <div class="bib-item">
+                        <pre><code>
+@article{yue2024mathvc,
+    title={Mathvc: An llm-simulated multi-character virtual classroom for mathematics education},
+    author={Yue, Murong and Lyu, Wenhan and Mifdal, Wijdane and Suh, Jennifer and Zhang, Yixuan and Yao, Ziyu},
+    journal={arXiv preprint arXiv:2404.06711},
+    year={2024}
+}
+                        </code></pre>
+                    </div>
+                </div>
+
+
+                <li>Sai Adith Senthil Kumar^, Hao Yan^, Saipavan Perepa, Murong Yue, and Ziyu Yao. "Can LLMs Simulate Personas with Reversed Performance? A Benchmark for Counterfactual Instruction Following." Preprint, 2025. [<a href="https://arxiv.org/pdf/2504.06460">Paper</a>]</li>
+                <button id="showBibButton2">Show Bibliography</button>
+                <div id="bibContainer2" class="bib-container">
+                    <div class="bib-item">
+                        <pre><code>
+@article{kumar2025can,
+    title={Can LLMs Simulate Personas with Reversed Performance? A Benchmark for Counterfactual Instruction Following},
+    author={Kumar, Sai Adith Senthil and Yan, Hao and Perepa, Saipavan and Yue, Murong and Yao, Ziyu},
+    journal={arXiv preprint arXiv:2504.06460},
+    year={2025}
+    }
+                        </code></pre>
+                    </div>
+                </div>
+
+
+                <li>Yue, Murong, and Ziyu Yao. "Efficient but Vulnerable: Benchmarking and Defending LLM Batch Prompting Attack." Preprint, 2025. [<a href="https://arxiv.org/pdf/2503.15551">Paper</a>]</li>
+                <button id="showBibButton3">Show Bibliography</button>
+                <div id="bibContainer3" class="bib-container">
+                    <div class="bib-item">
+                        <pre><code>
+@article{yue2025efficient,
+    title={Efficient but Vulnerable: Benchmarking and Defending LLM Batch Prompting Attack},
+    author={Yue, Murong and Yao, Ziyu},
+    journal={arXiv preprint arXiv:2503.15551},
+    year={2025}
+    }
+                        </code></pre>
+                    </div>
+                </div>
+
+
+
+                <script>
+                    // Function to toggle a single bibliography item
+                    function toggleBibItem(buttonId, containerId) {
+                        const button = document.getElementById(buttonId);
+                        const container = document.getElementById(containerId);
+                        
+                        button.addEventListener('click', function() {
+                            if (container.style.display === 'block') {
+                                container.style.display = 'none';
+                                this.textContent = 'Show ' + this.textContent.split(' ')[1];
+                            } else {
+                                container.style.display = 'block';
+                                this.textContent = 'Hide ' + this.textContent.split(' ')[1];
+                            }
+                        });
+                    }
+                    
+                    // Set up toggle for each individual item
+                    toggleBibItem('showBibButton1', 'bibContainer1');
+                    toggleBibItem('showBibButton2', 'bibContainer2');
+                    toggleBibItem('showBibButton3', 'bibContainer3');
+                </script>
+
             </div>
 
         </div>
     </div>
 </section>
 
-
-<section class="section">
+<section class="section" id="Presentations">
     <div class="columns is-centered">
         <div class="container is-max-desktop">
-            <h2 class="title is-3">MathVC Structure</h2>
-            <img src="./static/images/structure.png" alt="A descriptive text about the image">
+            <h2 class="title is-3">Presentations</h2>
             <div class="content has-text-justified">
-                <p>
-                    Our system consists of two parts, i.e., meta planner for organizing the overall conversation and
-                    facilitating a smooth multi-stage student discussion, and character simulation for creating and
-                    updating individual student characters.
-                    <br>
-                    A key innovation of MathVC lies in the use of symbolic schemas describing how characters form and
-                    gradually update their understanding of the mathematics problem. Specifically, we design the <b>Task
-                    Schema</b> to describe elements that are necessary for solving a given MM task and the <b>Character
-                    Schema</b>to show a student character's understanding and modeling plan. An example is shown below.
-                    The LLM edits the correct value 16 into 15 in the task schema to simulate the initial mistake made
-                    by the simulated student Charlie.
-                </p>
-                <img src="./static/images/schema.png" alt="A descriptive text about the image">
-
+                <li>Poster Presentation at <a href="https://ai4ed.cc/workshops/aaai2025">AAAI Workshop on AI4Edu</a>. Presenter: Murong Yue. Feb 2025.</li>
+                <li>Invited Presentation at the Panel of "AI for Education Use Cases: Bridging Research to Practice" by the <a href="https://cahmp.gmu.edu/upcoming-convening-on-ai-and-data-driven-decision-making-for-education-policy-and-equity/">AI and Data-Informed Education Policy Initiative (AIEP)  at GMU</a>. Presenter: Ziyu Yao and Jenn Suh. Oct 2024.</li>
+                <li>Invited Presentation at <a href="https://www.wolframcloud.com/obj/jmcnally0/Published/June14Colloquium-Schedule.nb">Wolfram Research, the "LLM Agents for Modeling Group Dynamics" Online Colloquium</a>. Presenter: Ziyu Yao. June 2024. </li>
             </div>
-
-
-            <!-- Interpolating. -->
-            <!--            <h3 class="title is-4">Human Evaluation</h3>-->
-            <!--            <div class="content has-text-justified">-->
-            <!--                <p>-->
-            <!--                    We compare MathVC with four baselines.-->
-            <!--                <li>Vanilla Simulation: We directly present the LLM the math question, the student characteristics, and-->
-            <!--                    the dialogue history, and then instruct the LLM to generate responses as a middleschool student.-->
-            <!--                </li>-->
-            <!--                <li>Domain-Specified Simulation: We augment the vanilla simulation with domain-specific knowledge.-->
-            <!--                    <ul>-->
-            <!--                        <li>w/ only character schema: We augment domain-specific simulation with the character schema.-->
-            <!--                        </li>-->
-            <!--                        <li>w/ only the meta planner: We augment domain-specific simulation with the meta planner.-->
-            <!--                        </li>-->
-            <!--                    </ul>-->
-            <!--                </li>-->
-            <!--                <br>-->
-            <!--                The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment-->
-            <!--                and conversational procedural alignment it reflected (1: worst; 4: best).-->
-
-            <!--                </p>-->
-            <!--            </div>-->
-            <!--            <br>-->
-            <!--            &lt;!&ndash; TABLE CODE HERE &ndash;&gt;-->
-            <!--            <div class="table-container">-->
-            <!--                <table class="table is-striped is-hoverable is-fullwidth">-->
-            <!--                    <thead>-->
-            <!--                    <tr>-->
-            <!--                        <th></th>-->
-            <!--                        <th>Characteristic Alignment</th>-->
-            <!--                        <th>Conversational Procedural Alignment</th>-->
-            <!--                    </tr>-->
-            <!--                    </thead>-->
-            <!--                    <tbody>-->
-            <!--                    <tr>-->
-            <!--                        <td>Vanilla Simulation</td>-->
-            <!--                        <td>2.85</td>-->
-            <!--                        <td>2.88</td>-->
-            <!--                    </tr>-->
-            <!--                    <tr>-->
-            <!--                        <td>Domain-Specified Simulation</td>-->
-            <!--                        <td>3.30</td>-->
-            <!--                        <td>3.15</td>-->
-            <!--                    </tr>-->
-            <!--                    <tr>-->
-            <!--                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only character schema</td>-->
-            <!--                        <td>3.50</td>-->
-            <!--                        <td>3.20</td>-->
-            <!--                    </tr>-->
-            <!--                    <tr>-->
-            <!--                        <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only the meta planner</td>-->
-            <!--                        <td>3.00</td>-->
-            <!--                        <td>3.10</td>-->
-            <!--                    </tr>-->
-            <!--                    <tr>-->
-            <!--                        <td>MathVC</td>-->
-            <!--                        <td>3.73</td>-->
-            <!--                        <td>3.530</td>-->
-            <!--                    </tr>-->
-            <!--                    </tbody>-->
-            <!--                </table>-->
-            <!--            </div>-->
-        </div>
-    </div>
-</section>
-
-
-<!--<section class="section">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <h3 class="title is-4">Weaker LLMs can supervise Strong LLMs</h3>-->
-<!--        <div class="content has-text-justified">-->
-<!--            <p>-->
-<!--                With PRomPTed, we can supervise or rewrite prompts for stronger LLMs such as GPT-4 using a set of weaker-->
-<!--                LLM-->
-<!--                such as GPT-3.5.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        <br>-->
-<!--        <img src="./static/images/weaker.png" alt="A descriptive text about the image">-->
-<!--    </div>-->
-<!--</section>-->
-
-
-<section class="section">
-    <div class="container is-max-desktop">
-        <h2 class="title is-3">Experiment</h2>
-
-
-        <h3 class="title is-4">Human Evaluation</h3>
-        <div class="content has-text-justified">
-            <p>
-                We compare MathVC with four baselines.
-            <li>Vanilla Simulation: We directly present the LLM the math question, the student characteristics, and
-                the dialogue history, and then instruct the LLM to generate responses as a middleschool student.
-            </li>
-            <li>Domain-Specified Simulation: We augment the vanilla simulation with domain-specific knowledge.
-                <ul>
-                    <li>w/ only character schema: We augment domain-specific simulation with the character schema.
-                    </li>
-                    <li>w/ only the meta planner: We augment domain-specific simulation with the meta planner.
-                    </li>
-                </ul>
-            </li>
-            <br>
-            The annotators were instructed to rate each sampled dialogue on the degrees of characteristic alignment and
-            conversational procedural alignment it reflected (1: worst; 4: best).
-
-            </p>
-        </div>
-        <br>
-        <!-- TABLE CODE HERE -->
-        <div class="table-container">
-            <table class="table is-striped is-hoverable is-fullwidth">
-                <thead>
-                <tr>
-                    <th></th>
-                    <th>Characteristic Alignment</th>
-                    <th>Conversational Procedural Alignment</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Vanilla Simulation</td>
-                    <td>2.85</td>
-                    <td>2.88</td>
-                </tr>
-                <tr>
-                    <td>Domain-Specified Simulation</td>
-                    <td>3.30</td>
-                    <td>3.15</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only character schema</td>
-                    <td>3.50</td>
-                    <td>3.20</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;w/ only the meta planner</td>
-                    <td>3.00</td>
-                    <td>3.10</td>
-                </tr>
-                <tr>
-                    <td>MathVC</td>
-                    <td>3.73</td>
-                    <td>3.530</td>
-                </tr>
-                </tbody>
-            </table>
-            <p>
-                Takeaways:
-            <li>Incorporating domain knowledge improves the simulation quality.</li>
-            <li>Including character schema enhances characteristic alignment, but including meta planner enhances
-                alignment only when used with character schema.
-            </li>
-            <li>MathVC offers the most aligned simulation by harmoniously integrating character
-                schema with meta planner.
-            </li>
-            <br>
-            </p>
-            <h3 class="title is-4">Case Study</h3>
-
-            <div class="content has-text-justified">
-                <p>
-                    In the vanilla simulation, the discussion bypasses many discussion stages (e.g., establishing the
-                    team organization), and Alice, who is bad at mathematics, does not make any mistakes. The
-                    domain-specified simulation made some improvements, such as simulating responses that are shorter
-                    and can simulate how students establish shared task understanding before planning on
-                    problem-solving, although it is still unable to simulate a fully extended, multi-stage conversation
-                    (e.g., team organization is still missing). In MATHVC, the conversation successfully goes over all
-                    stages. It also simulates how Alice makes a calculation mistake initially, which is then corrected
-                    by Charlie. Like a real student, Alice then adjusts her modeling plan based on Charlie’s
-                    explanation.
-                </p>
-            </div>
-            <br>
-            <img src="./static/images/example.png" alt="A descriptive text about the image"
-                 style="display: block; margin-left: auto; margin-right: auto;">
 
         </div>
     </div>
 </section>
 
 
-<!--<section class="section">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        &lt;!&ndash; Title outside of the 'columns' container to ensure it is on its own line &ndash;&gt;-->
-<!--        <h3 class="title">Related Work</h3>-->
-<!--        <div class="columns is-centered">-->
-<!--            <div class="column">-->
-<!--                <md-block class="content" rendered="content">-->
-<!--                    <p>There are other Prompt Optimization papers that aim to find optimal prompts such as:</p>-->
-<!--                    <ul>-->
-<!--                        <li><code>OPRO</code>, <code>APE</code> and <code>PromptAgent</code> that focus on optimizing-->
-<!--                            prompts in-->
-<!--                            few-shot settings.-->
-<!--                            <ul>-->
-<!--                                <li>Chengrun Yang, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V Le, Denny Zhou, & Xinyun-->
-<!--                                    Chen (2024).-->
-<!--                                    Large Language Models as Optimizers.-->
-<!--                                    In The Twelfth International Conference on Learning Representations.-->
-<!--                                </li>-->
-<!--                                <li>Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han, Keiran Paster, Silviu Pitis, Harris-->
-<!--                                    Chan, & Jimmy Ba-->
-<!--                                    (2023). Large Language Models are Human-Level Prompt Engineers.-->
-<!--                                    In The Eleventh International Conference on Learning Representations .-->
-<!--                                </li>-->
-<!--                                <li>Nancy Xu, Sam Masling, Michael Du, Giovanni Campagna, Larry Heck, James Landay, and-->
-<!--                                    Monica S. Lam.-->
-<!--                                    Grounding-->
-<!--                                    open-domain instructions to automate web support tasks. arXiv preprint-->
-<!--                                    arXiv:2103.16057 (2021).-->
-<!--                                </li>-->
-<!--                                <li>Xinyuan Wang, Chenxi Li, Zhen Wang, Fan Bai, Haotian Luo, Jiayou Zhang, Nebojsa-->
-<!--                                    Jojic, Eric Xing, &-->
-<!--                                    Zhiting Hu (2024). PromptAgent: Strategic Planning with Language Models Enables-->
-<!--                                    Expert-level Prompt-->
-<!--                                    Optimization.-->
-<!--                                    In The Twelfth International Conference on Learning Representations.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </md-block>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="section" id="Outreach">
+    <div class="columns is-centered">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Outreach Activities</h2>
+            <div class="content has-text-justified">
+                <li><a href="https://sites.google.com/view/mathedventure/home">Math EdVenture Camp</a> at George Mason University, July 7-11, 2025.</li>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="section" id="Discussion">
+
+<section class="section" id="Members">
     <div class="container is-max-desktop content">
-        <h2 class="title">Discussion and Future Work</h2>
-        <p>
-            Our research is motivated by the pressing need to alleviate the dependence on teachers to
-            orchestrate collaborative student learning for mathematics modeling (MM), a critical skill
-            in STEM fields. To the best of our knowledge, MathVC is the very first LLM-powered
-            multi-character virtual classroom designed for this purpose. We envision that such a
-            platform can eventually be deployed as effective take-home exercises for students practicing
-            their MM skills. This is particularly important for marginalized communities where only
-            limited teachers and educational resources are available, and our system has the potential
-            to become a tool to promote educational equity. In addition, we also identify a few other
-            benefits of how MathVC could assist students in learning. For example, MathVC can
-            reduce the pressure and anxiety of students for taking peer discussions, thus increasing
-            their opportunities to participate. This is especially beneficial for students who may be
-            reluctant to participate due to shyness, low self-esteem, language barriers, or poor academic
-            performance. Our system thus promotes inclusion, allowing a greater variety of students
-            to participate, thereby increasing diversity and breadth. Finally, we note that teachers
-            have the flexibility to configure the student characters according to each human student’s
-            background and performance, which can thus enable personalized learning experiences.
-            In the future, one could also extend our system to automatically optimize the character
-            configuration based on the student’s past performance.
-            <br><br>
-            Despite all the promises discussed above, however, we still have some future works to do:
-        <li><b>User friendly interface:</b> Developing a student friendly interface.</li>
-        <li><b>Pilot study:</b> Conducting a pilot study with real human students to obtain more
-            feedbacks.</li>
-        <li><b>Collecting real-life data:</b> Collecting more real-life data from student and finetune LLMs to enhance the alignments.</li>
-        <li><b>More characteristics simulation:</b> Conducting extension of our system could be to enable richer
-characteristics simulation, including but not limited to gender, age, name, culture, language,
-and academic background.</li>
+        <h2 class="title">Team Members</h2>
+        
+        <!-- Faculty Members -->
+        <h3 class="subtitle">Faculty</h3>
+        <div class="columns is-multiline">
+        <!-- Faculty Member 1 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/ziyu.jpeg" alt="Ziyu Yao">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5"><a href="https://ziyuyao.org/">Dr. Ziyu Yao</a> (PI)</p>
+                <p class="subtitle is-6">George Mason University, Computer Science</p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Faculty Member 2 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Jenn.jpg" alt="Jenn Suh">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5"><a href="https://drjennifersuh.onmason.com/">Dr. Jennifer Suh</a></p>
+                <p class="subtitle is-6">George Mason University, Math Education</p>
+            </div>
+            </div>
+        </div>
 
+        <!-- Faculty Member 3 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Janice.jpg" alt="Janice Zhang">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5"><a href="https://zjanice.github.io/">Dr. Yixuan ("Janice") Zhang</a></p>
+                <p class="subtitle is-6">William & Mary, Computer Science</p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Add more faculty members as needed -->
+        </div>
 
-        </p>
+        
+        <!-- Board Members -->
+        <h3 class="subtitle">Advisory Board</h3>
+        Coming Soon!
 
+        
+        <!-- Students -->
+        <h3 class="subtitle">PhD Student Leads</h3>
+        <div class="columns is-multiline">
+        <!-- Student 1 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Murong.png" alt="Murong Yue">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5"><a href="https://murongyue.github.io/">Murong Yue</a></p>
+                <p class="subtitle is-6">George Mason University, Computer Science</p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Student 2 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Wenhan.webp" alt="Wenhan Lyu">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5"><a href="https://www.wenhanlyu.com/">Wenhan Lyu</a></p>
+                <p class="subtitle is-6">William & Mary, Computer Science</p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Add more PhD student leads as needed -->
+        </div>
+
+        <!-- Students -->
+        <h3 class="subtitle">Other Student Researchers</h3>
+        <div class="columns is-multiline">
+        <!-- Student 1 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Wijdane.jpg" alt="Wijdane Mifdal">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5">Wijdane Mifdal</p>
+                <p class="subtitle is-6">Undergraduate Student at GMU CS</p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Student 2 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Sai.jpeg" alt="Sai">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5">Sai Adith Senthil Kumar</p>
+                <p class="subtitle is-6">Undergraduate Student at GMU CS</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Student 3 -->
+        <div class="column is-one-third">
+            <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                <img src="./static/images/Hao.jpg" alt="Hao Yan">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title is-5">Hao Yan</p>
+                <p class="subtitle is-6">PhD Student at GMU CS</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Add more other students as needed -->
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="Gallery">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Gallery</h2>
+        Coming soon!
     </div>
 </section>
 
@@ -932,76 +408,36 @@ and academic background.</li>
 <section class="section" id="Acknowledge">
     <div class="container is-max-desktop content">
         <h2 class="title">Acknowledge</h2>
-        <p>We were grateful to receive support from Microsoft’s Accelerating Foundation Models Research program (<a
-                href="https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/">https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/</a>)
-            for conducting this research. We also appreciate computing resources from the Office of Research Computing (<a
-                    href="https://orc.gmu.edu">https://orc.gmu.edu</a>) and funding support from the Department of
-            Computer Science at GMU. W. Mifdal was sponsored by the Office of Student Creative Activities and Research
-            (OSCAR) at GMU. We thank Dr. Anthony Eamonn Kelly (GMU, Educational Psychology) and Dr. Melissa A. Gallagher
-            (University of Houston, Department of Curriculum & Instruction) for early discussions about the idea, and
-            students in the GMU NLP group (<a href="https://nlp.cs.gmu.edu/">https://nlp.cs.gmu.edu/</a>) for their
-            thoughtful comments.</p>
 
+        <div class="sponsor-logos">
+            <a href="https://www.nsf.gov/" target="_blank">
+              <img src="./static/images/NSF.png" alt="NSF">
+            </a>
+            <a href="https://www.microsoft.com/en-us/research" target="_blank">
+              <img src="./static/images/MSR.jpeg" alt="Microsoft Research">
+            </a>
+            <a href="https://www.gmu.edu/" target="_blank">
+              <img src="./static/images/GMU.png" alt="George Mason University">
+            </a>
+            <a href="https://www.wm.edu/" target="_blank">
+                <img src="./static/images/WM.png" alt="William & Mary" width="150">
+            </a>
+          </div>
+
+        <p>We were grateful to receive support from the National Science Foundation (<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2418580">2418580</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2418582">2418582</a>), Microsoft Accelerating Foundation Models Research program (<a href="https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/">https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/</a>), Department of Computer Science at GMU, and William & Mary for conducting this research. We also appreciate computing resources from the Office of Research Computing (<a href="https://orc.gmu.edu">https://orc.gmu.edu</a>) and the assistance from the Institutional Review Board (IRB) at GMU and William & Mary. Undergraduate students in the team have also received sponsorship from the <a href="https://oscar.gmu.edu/">Office of Student Creative Activities and Research (OSCAR)</a> at GMU. 
+        
+        <br><br>
+        We thank Dr. Anthony Eamonn Kelly (GMU, Educational Psychology) and Dr. Melissa A. Gallagher (University of Houston, Department of Curriculum & Instruction) for early discussions about the idea, and students in the GMU NLP group (<a href="https://nlp.cs.gmu.edu/">https://nlp.cs.gmu.edu/</a>) for their thoughtful comments.</p>
     </div>
 </section>
 
 
-<section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <p>If you find our paper helpful, please cite it as follows</p>
-        <pre><code>@misc{yue2024mathvc,
-      title={MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education},
-      author={Murong Yue and Wijdane Mifdal and Yixuan Zhang and Jennifer Suh and Ziyu Yao},
-      year={2024},
-      eprint={2404.06711},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}</code></pre>
-    </div>
-</section>
 
 
-<!--<div class="container is-max-desktop content">-->
-<!--    <h2 class="title">Corresponding Authors</h2>-->
-<!--    <div class="column is-10 is-offset-1">-->
-<!--        <div class="columns has-text-centered">-->
-<!--            <div class="column">-->
-<!--                <figure class="image is-128x128" style="margin-left: auto; margin-right: auto">-->
-<!--                    <a href="https://saurabhsriv.com/">-->
-<!--                        <img class="is-rounded profile" src="./static/images/ss.png">-->
-<!--                    </a>-->
-<!--                    <a href="https://saurabhsriv.com/">-->
-<!--                        <figcaption>Saurabh Srivastava</figcaption>-->
-<!--                    </a>-->
-<!--                </figure>-->
-<!--            </div>-->
-<!--            <div class="column">-->
-<!--                <figure class="image is-128x128" style="margin-left: auto; margin-right: auto">-->
-<!--                    <a href="http://ziyuyao.org">-->
-<!--                        <img class="is-rounded profile" src="./static/images/ziyu.jpeg">-->
-<!--                    </a>-->
-<!--                    <a href="https://ziyuyao.org">-->
-<!--                        <figcaption>Ziyu Yao</figcaption>-->
-<!--                    </a>-->
-<!--                </figure>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 
 <footer class="footer">
     <div class="container">
-<!--                <div class="content has-text-centered">-->
-<!--                    <a class="icon-link"-->
-<!--                       href="https://arxiv.org/pdf/2404.06711.pdf">-->
-<!--                        <i class="fas fa-file-pdf"></i>-->
-<!--                    </a>-->
-<!--                    <a class="icon-link" href="https://github.com/salokr" class="external-link" disabled>-->
-<!--                        <i class="fab fa-github"></i>-->
-<!--                    </a>-->
-<!--                </div>-->
         <div class="columns is-centered">
             <div class="column is-8">
                 <div class="content">
@@ -1011,11 +447,7 @@ and academic background.</li>
                         Commons Attribution-ShareAlike 4.0 International License</a>.
                     </p>
                     <p>
-                        This means you are free to borrow the <a
-                            href="https://github.com/salokr/prompted.github.io/">source code</a> of this website,
-                        we just ask that you link back to this page in the footer.
-                        Please remember to remove the analytics code included in the header of the website which
-                        you do not want on your website.
+                        This means you are free to borrow the <a href="https://github.com/Ziyu-Yao-NLP-Lab/MathVC-NSF.github.io">source code</a> (initially <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>) of this website, we just ask that you link back to this page in the footer. Please remember to remove the analytics code included in the header of the website which you do not want on your website.
                     </p>
                 </div>
             </div>
